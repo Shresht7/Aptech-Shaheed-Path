@@ -1,0 +1,39 @@
+<div>
+    <slot />
+</div>
+
+<style>
+    :root {
+        --background-image: url("/images/hero.webp");
+        --gradient-start: hsl(0 0% 0%);
+        --gradient-end: hsl(0, 52%, 23%);
+        --gradient-rotation: 90deg;
+    }
+
+    div {
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        background-image: var(--background-image);
+        background-size: cover;
+        background-position: 0 40%;
+        position: relative;
+        z-index: -1;
+    }
+
+    div::before {
+        content: "";
+        position: absolute;
+        background: linear-gradient(
+            var(--gradient-rotation),
+            var(--gradient-start),
+            var(--gradient-end)
+        );
+        opacity: 0.66;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+    }
+</style>
