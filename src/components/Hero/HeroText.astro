@@ -1,15 +1,33 @@
-<div class="container">
-    <h1>Unleash Your Potential</h1>
-    <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis animi
-        placeat autem temporibus consequuntur hic aspernatur quae quis unde
-        corrupti, molestiae inventore?
-    </p>
+<div id="text-container" class="container">
+    <div id="text">
+        <h1>Unleash Your Potential</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias
+            dolore omnis rem eos sint, quisquam aliquid nam earum obcaecati
+            tempore inventore dolor, nisi atque sunt nulla repellat aut
+            aspernatur saepe.
+        </p>
+    </div>
 </div>
 
 <style>
-    div {
-        width: 50vw;
+    #text-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    #text {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
         color: var(--color-bg);
         text-align: center;
         z-index: 1;
