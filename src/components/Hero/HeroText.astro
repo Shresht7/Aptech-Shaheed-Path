@@ -21,6 +21,7 @@
     }
 
     #text {
+        --animation-duration: 750ms;
         width: 60%;
         height: 100%;
         display: flex;
@@ -31,5 +32,25 @@
         color: var(--color-bg);
         text-align: center;
         z-index: 1;
+        animation: fade ease-in var(--animation-duration) forwards,
+            fly var(--animation-duration) forwards;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fly {
+        from {
+            translate: 0 20px;
+        }
+        to {
+            traslate: 0px;
+        }
     }
 </style>
