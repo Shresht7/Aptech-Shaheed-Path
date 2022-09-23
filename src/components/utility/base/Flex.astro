@@ -1,15 +1,17 @@
 ---
-export interface Props {
+import type { AstroBuiltinAttributes, AstroBuiltinProps } from "astro";
+
+export interface Props extends AstroBuiltinProps {
     flexDirection?: string;
     justifyContent?: string;
     alignItems?: string;
     gap?: string;
 }
 
-const { flexDirection, justifyContent, alignItems, gap } = Astro.props;
+const { flexDirection, justifyContent, alignItems, gap, ...rest } = Astro.props;
 ---
 
-<div>
+<div {...rest}>
     <slot />
 </div>
 
