@@ -1,0 +1,51 @@
+---
+export interface Props {
+    title: string;
+    cover: string;
+}
+
+const { title, cover } = Astro.props;
+---
+
+<div class="card-outline">
+    <div class="image-container"><img src={cover} alt={title} /></div>
+    <div class="card-details">
+        <h3>{title}</h3>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+            voluptate temporibus ipsam repudiandae quae nemo.
+        </p>
+    </div>
+</div>
+
+<style>
+    .card-outline {
+        scale: 1;
+        border-radius: 0.25rem;
+    }
+
+    .card-outline,
+    .card-outline img {
+        transition: ease-in 250ms;
+    }
+
+    .card-outline:hover {
+        scale: 1.025;
+    }
+
+    .card-outline img:hover {
+        translate: 0 -5px;
+    }
+
+    img {
+        border-radius: 1rem;
+    }
+
+    .card-details {
+        padding: 1rem 1.5rem;
+    }
+
+    .card-details p {
+        font-size: 0.8rem;
+    }
+</style>
