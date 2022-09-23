@@ -1,0 +1,36 @@
+---
+import Input from "./Input.astro";
+//  Components
+---
+
+<section class="background">
+    <div class="container">
+        <form>
+            <Input label="Name" />
+            <Input label="Email" />
+            <Input label="Phone Number" />
+            <Input label="Other" />
+        </form>
+    </div>
+</section>
+
+<style>
+    .background {
+        background-color: var(--color-text);
+        padding: 5rem 0;
+    }
+
+    .container {
+        max-width: 25rem;
+        margin: 0 auto;
+    }
+
+    form {
+        color: var(--color-bg);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1rem;
+    }
+</style>
