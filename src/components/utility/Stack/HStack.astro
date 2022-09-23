@@ -1,0 +1,8 @@
+---
+import Flex, { Props as FlexProps } from "../base/Flex.astro";
+export interface Props extends FlexProps {}
+---
+
+<Flex flexDirection="row" justifyContent="space-between" {...Astro.props}>
+    <slot />
+</Flex>

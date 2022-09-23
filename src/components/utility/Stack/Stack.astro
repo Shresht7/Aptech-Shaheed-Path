@@ -1,0 +1,16 @@
+---
+import HStack from "./HStack.astro";
+import VStack from "./VStack.astro";
+import type { Props as FlexProps } from "../base/Flex.astro";
+
+export interface Props extends FlexProps {
+    direction?: "vertical" | "horizontal";
+}
+
+const { direction, ...rest } = Astro.props;
+const Component = direction === "vertical" ? VStack : HStack;
+---
+
+<Component {...rest}>
+    <slot />
+</Component>

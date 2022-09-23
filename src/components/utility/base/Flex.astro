@@ -1,0 +1,24 @@
+---
+export interface Props {
+    flexDirection?: string;
+    justifyContent?: string;
+    alignItems?: string;
+    gap?: string;
+}
+
+const { flexDirection, justifyContent, alignItems, gap } = Astro.props;
+---
+
+<div>
+    <slot />
+</div>
+
+<style define:vars={{ flexDirection, justifyContent, alignItems, gap }}>
+    div {
+        display: flex;
+        flex-direction: var(--flexDirection, column);
+        justify-content: var(--justifyContent, center);
+        align-items: var(--alignItems, center);
+        gap: var(--gap, 1rem);
+    }
+</style>
