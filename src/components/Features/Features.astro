@@ -27,4 +27,10 @@ import FeatureRight from "./FeatureRight.astro";
         --flex-right: 1;
         color: var(--color-bg);
     }
+
+    @media (max-width: 768px) {
+        .wrapper {
+            flex-direction: column;
+        }
+    }
 </style>
