@@ -1,0 +1,4 @@
+[[redirects]]
+from = "/qr/1"
+to = "/"
+status = 301
