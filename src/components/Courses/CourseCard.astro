@@ -2,12 +2,13 @@
 export interface Props {
     title: string;
     cover: string;
+    url: string;
 }
 
-const { title, cover } = Astro.props;
+const { title, cover, url } = Astro.props;
 ---
 
-<div class="card-outline">
+<a href={url} class="card-outline">
     <div class="image-container"><img src={cover} alt={title} /></div>
     <div class="card-details">
         <h3>{title}</h3>
@@ -16,7 +17,7 @@ const { title, cover } = Astro.props;
             voluptate temporibus ipsam repudiandae quae nemo.
         </p>
     </div>
-</div>
+</a>
 
 <style>
     .card-outline {

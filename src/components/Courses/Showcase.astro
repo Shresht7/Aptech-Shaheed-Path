@@ -2,16 +2,20 @@
 import CourseCard from "./CourseCard.astro";
 
 const courses = [
-    { title: "Course 1", cover: "/images/course-1.webp" },
-    { title: "Course 2", cover: "/images/course-2.webp" },
-    { title: "Course 3", cover: "/images/course-3.webp" },
+    { title: "Course 1", cover: "/images/course-1.webp", url: "/courses/1" },
+    { title: "Course 2", cover: "/images/course-2.webp", url: "/courses/2" },
+    { title: "Course 3", cover: "/images/course-3.webp", url: "/courses/3" },
 ];
 ---
 
 <div>
     {
         courses.map((course) => (
-            <CourseCard title={course.title} cover={course.cover} />
+            <CourseCard
+                title={course.title}
+                cover={course.cover}
+                url={course.url}
+            />
         ))
     }
 </div>
