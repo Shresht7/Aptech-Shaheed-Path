@@ -1,16 +1,18 @@
----
-// Components
-import Flex from "../../../components/utility/base/Flex.astro";
----
-
 <a href="/">
-    <Flex flexDirection="row">
+    <div>
         <img src="/images/logo.png" alt="Aptech Logo" />
         <span id="branch-name">SHAHEED PATH</span>
-    </Flex>
+    </div>
 </a>
 
 <style>
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
     div,
     a,
     img {

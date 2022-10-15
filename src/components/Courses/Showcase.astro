@@ -1,13 +1,12 @@
 ---
-import HStack from "../utility/Stack/HStack.astro";
 import CourseCard from "./CourseCard.astro";
 ---
 
-<HStack justifyContent="center" class:list="full-width" gap="3rem">
+<div>
     <CourseCard title="Course 1" cover="/images/course-1.webp" />
     <CourseCard title="Course 2" cover="/images/course-2.webp" />
     <CourseCard title="Course 3" cover="/images/course-3.webp" />
-</HStack>
+</div>
 
 <style>
     .full-width {
