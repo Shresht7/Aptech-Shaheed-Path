@@ -1,21 +1,16 @@
 ---
-import Button from "../utility/Button.astro";
-import Input from "./Input.astro";
+import FormHeader from "./FormHeader.astro";
+import FormInputs from "./FormInputs.astro";
+import FormButtons from "./FormButtons.astro";
 //  Components
 ---
 
 <section class="background">
     <div class="container">
         <form action="/functions/contact">
-            <h2>Contact Form</h2>
-            <Input label="Name" />
-            <Input label="Email" />
-            <Input label="Phone Number" />
-            <Input label="Other" />
-            <div id="form-buttons">
-                <Button type="submit" label="SUBMIT" />
-                <Button type="reset" label="CLEAR" variant="outline" />
-            </div>
+            <FormHeader />
+            <FormInputs />
+            <FormButtons />
         </form>
     </div>
 </section>
@@ -32,19 +27,14 @@ import Input from "./Input.astro";
         margin: 0 auto;
     }
 
-    h2 {
-        color: var(--color-bg);
-        text-align: center;
-        z-index: 1;
-    }
-
     form {
+        width: 100%;
         color: var(--color-bg);
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
-        gap: 1rem;
+        gap: 2rem;
         position: relative;
         z-index: 1;
     }
@@ -58,13 +48,5 @@ import Input from "./Input.astro";
         rotate: -60deg;
         z-index: -1;
         background-color: var(--color-text);
-    }
-
-    #form-buttons {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
     }
 </style>
