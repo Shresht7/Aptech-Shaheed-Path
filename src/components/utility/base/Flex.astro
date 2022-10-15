@@ -1,7 +1,5 @@
 ---
-import type { AstroBuiltinAttributes, AstroBuiltinProps } from "astro";
-
-export interface Props extends AstroBuiltinProps {
+export interface Props extends astroHTML.JSX.InputHTMLAttributes {
     flexDirection?: string;
     justifyContent?: string;
     alignItems?: string;
