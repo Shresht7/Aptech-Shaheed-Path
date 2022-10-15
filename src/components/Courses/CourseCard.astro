@@ -22,22 +22,8 @@ const { title, cover } = Astro.props;
     .card-outline {
         scale: 1;
         border-radius: 0.25rem;
-        flex: 1;
-        min-width: 300px;
-        max-width: 500px;
-    }
-
-    .card-outline,
-    .card-outline img {
-        transition: ease-in 250ms;
-    }
-
-    .card-outline:hover {
-        scale: 1.025;
-    }
-
-    .card-outline img:hover {
-        translate: 0 -5px;
+        width: clamp(400px, 30%, 600px);
+        cursor: pointer;
     }
 
     img {

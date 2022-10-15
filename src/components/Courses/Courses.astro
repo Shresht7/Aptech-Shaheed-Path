@@ -3,14 +3,18 @@ import Showcase from "./Showcase.astro";
 ---
 
 <section class="container">
-    <div>
-        <div><h2>COURSES</h2></div>
-        <Showcase />
-    </div>
+    <div><h2>COURSES</h2></div>
+    <Showcase />
 </section>
 
 <style>
     section.container {
-        margin: 3rem auto;
+        margin: 2rem auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
     }
 </style>

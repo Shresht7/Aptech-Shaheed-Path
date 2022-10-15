@@ -1,16 +1,28 @@
 ---
 import CourseCard from "./CourseCard.astro";
+
+const courses = [
+    { title: "Course 1", cover: "/images/course-1.webp" },
+    { title: "Course 2", cover: "/images/course-2.webp" },
+    { title: "Course 3", cover: "/images/course-3.webp" },
+];
 ---
 
 <div>
-    <CourseCard title="Course 1" cover="/images/course-1.webp" />
-    <CourseCard title="Course 2" cover="/images/course-2.webp" />
-    <CourseCard title="Course 3" cover="/images/course-3.webp" />
+    {
+        courses.map((course) => (
+            <CourseCard title={course.title} cover={course.cover} />
+        ))
+    }
 </div>
 
 <style>
-    .full-width {
-        width: 100%;
+    div {
+        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
     }
 </style>
