@@ -6,6 +6,7 @@ import Input from "./Input.astro";
 <section class="background">
     <div class="container">
         <form>
+            <h2>Contact Form</h2>
             <Input label="Name" />
             <Input label="Email" />
             <Input label="Phone Number" />
@@ -24,6 +25,12 @@ import Input from "./Input.astro";
     .container {
         max-width: 33rem;
         margin: 0 auto;
+    }
+
+    h2 {
+        color: var(--color-bg);
+        text-align: center;
+        z-index: 1;
     }
 
     form {
