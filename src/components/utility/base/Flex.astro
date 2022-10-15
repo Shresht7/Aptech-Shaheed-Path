@@ -4,6 +4,7 @@ export interface Props extends astroHTML.JSX.InputHTMLAttributes {
     justifyContent?: string;
     alignItems?: string;
     gap?: string;
+    slot?: string;
 }
 
 const { flexDirection, justifyContent, alignItems, gap, ...rest } = Astro.props;
