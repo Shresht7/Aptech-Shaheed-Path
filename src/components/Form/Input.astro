@@ -13,19 +13,26 @@ const { label = "", type = "text" } = Astro.props;
 </div>
 
 <style>
-    .full-width {
-        width: 100%;
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0.175rem;
+    }
+
+    label {
+        padding-left: 1rem;
+        font-size: 0.8rem;
     }
 
     input {
         border-radius: 0.5rem;
-        padding: 0.25rem 0.5rem;
+        padding: 0.25rem 1rem;
     }
 
-    div {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 0.25rem;
+    input:focus {
+        outline: 2px solid var(--color-aptech-gold);
+        outline-offset: 4px;
     }
 </style>
