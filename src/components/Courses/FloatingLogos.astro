@@ -1,0 +1,96 @@
+---
+const getRandomNumber = (max: number = 9000, min: number = 3000) =>
+    Math.random() * (max - min) + min;
+
+const logos = [
+    {
+        name: "msoffice",
+        src: "./assets/tech/logos_msoffice.svg",
+        x: "5%",
+        y: "7%",
+        duration: getRandomNumber(),
+        delay: getRandomNumber(),
+        travel: getRandomNumber(30, 10),
+    },
+    {
+        name: "c",
+        src: "./assets/tech/logos_c.svg",
+        x: "3%",
+        y: "40%",
+        duration: getRandomNumber(),
+        delay: getRandomNumber(),
+        travel: getRandomNumber(30, 10),
+    },
+    {
+        name: "cpp",
+        src: "./assets/tech/logos_cpp.svg",
+        x: "95%",
+        y: "45%",
+        duration: getRandomNumber(),
+        delay: getRandomNumber(),
+        travel: getRandomNumber(30, 10),
+    },
+    {
+        name: "javascript",
+        src: "./assets/tech/logos_javascript.svg",
+        x: "92%",
+        y: "9%",
+        duration: getRandomNumber(),
+        delay: getRandomNumber(),
+        travel: getRandomNumber(30, 10),
+    },
+    {
+        name: "java",
+        src: "./assets/tech/logos_java.svg",
+        x: "94%",
+        y: "75%",
+        duration: getRandomNumber(),
+        delay: getRandomNumber(),
+        travel: getRandomNumber(30, 10),
+    },
+    {
+        name: "python",
+        src: "./assets/tech/logos_python.svg",
+        x: "8%",
+        y: "78%",
+        duration: getRandomNumber(),
+        delay: getRandomNumber(),
+        travel: getRandomNumber(30, 10),
+    },
+];
+---
+
+{
+    logos.map((logo) => (
+        <div
+            class="floating-logo"
+            style={`--x: ${logo.x}; --y: ${logo.y}; --animation-duration: ${logo.duration}ms; --animation-delay: ${logo.delay}ms; --travel: ${logo.travel}%`}
+        >
+            <img src={logo.src} alt={logo.name} />
+        </div>
+    ))
+}
+
+<style>
+    .floating-logo {
+        position: absolute;
+        top: var(--y);
+        left: var(--x);
+        animation: float var(--animation-duration) ease-in-out infinite;
+        animation-delay: calc(-1 * var(--animation-delay));
+        --travel: 10%;
+        --travel-opposite: calc(-1 * var(--travel));
+    }
+
+    @keyframes float {
+        0% {
+            translate: 0 var(--travel);
+        }
+        50% {
+            translate: 0 var(--travel-opposite);
+        }
+        100% {
+            translate: 0 var(--travel);
+        }
+    }
+</style>
