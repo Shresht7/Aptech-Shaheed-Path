@@ -7,7 +7,7 @@ import FormButtons from "./FormButtons.astro";
 
 <section class="background">
     <div class="container">
-        <form action="/functions/contact">
+        <form id="contact-form">
             <FormHeader />
             <FormInputs />
             <FormButtons />
@@ -50,3 +50,15 @@ import FormButtons from "./FormButtons.astro";
         background-color: var(--color-text);
     }
 </style>
+
+<script>
+    const form = document.getElementById("contact-form") as HTMLFormElement;
+    form.addEventListener("submit", async (e: SubmitEvent) => {
+        e.preventDefault();
+        const res = await fetch("/.netlify/functions/contact", {
+            method: "POST",
+            body: "hello world",
+        });
+        console.log(res);
+    });
+</script>
