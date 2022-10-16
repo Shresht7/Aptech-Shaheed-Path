@@ -1,6 +1,7 @@
 ---
 import Title from "../utility/Title.astro";
 import Testimonial from "./Testimonial.astro";
+import Section from "../utility/Section.astro";
 
 const testimonials = [
     {
@@ -21,28 +22,18 @@ const testimonials = [
 ];
 ---
 
-<section class="background">
+<Section>
     <Title>Testimonials</Title>
-    <div class="container">
+    <div>
         {
             testimonials.map(({ avatar, name, text }) => (
                 <Testimonial avatar={avatar} name={name} text={text} />
             ))
         }
     </div>
-</section>
+</Section>
 
 <style>
-    .background {
-        background-color: var(--color-bg);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 3rem;
-        margin: 2rem auto;
-    }
-
     div {
         display: flex;
         flex-direction: row;

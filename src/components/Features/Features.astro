@@ -1,22 +1,17 @@
 ---
-//  Components
 import FeatureLeft from "./FeatureLeft.astro";
 import FeatureRight from "./FeatureRight.astro";
+import Section from "../utility/Section.astro";
 ---
 
-<section class="background">
-    <div class="container wrapper">
+<Section classNames="inverted">
+    <div class="wrapper">
         <FeatureLeft />
         <FeatureRight />
     </div>
-</section>
+</Section>
 
 <style>
-    .background {
-        background-color: var(--color-text);
-        padding: 5rem 0;
-    }
-
     .wrapper {
         display: flex;
         flex-direction: row;
@@ -25,7 +20,6 @@ import FeatureRight from "./FeatureRight.astro";
         gap: 5rem;
         --flex-left: 1;
         --flex-right: 1;
-        color: var(--color-bg);
     }
 
     @media (max-width: 768px) {

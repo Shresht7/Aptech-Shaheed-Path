@@ -1,0 +1,33 @@
+---
+export interface Props {
+    gap?: string;
+    margin?: string;
+    padding?: string;
+    classNames?: string;
+}
+
+const { classNames = "", gap, margin, padding } = Astro.props;
+---
+
+<section class={classNames}>
+    <div class="container">
+        <slot />
+    </div>
+</section>
+
+<style define:vars={{ gap, margin, padding }}>
+    section {
+        margin: var(--marign, 0 auto);
+        padding: var(--padding, 5rem 0);
+        background-color: var(--color-bg, inherit);
+        color: var(--color-text, inherit);
+    }
+
+    section .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: var(--gap, 2rem);
+    }
+</style>
