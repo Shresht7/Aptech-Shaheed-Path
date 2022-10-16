@@ -1,19 +1,53 @@
 ---
-import Avatar from "../utility/Avatar.astro";
 import Title from "../utility/Title.astro";
-//  Components
+import Testimonial from "./Testimonial.astro";
+
+const testimonials = [
+    {
+        avatar: "/images/course-1.webp",
+        name: "Person 1",
+        text: "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet",
+    },
+    {
+        avatar: "/images/course-2.webp",
+        name: "Person 2",
+        text: "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet",
+    },
+    {
+        avatar: "/images/course-3.webp",
+        name: "Person 3",
+        text: "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet",
+    },
+];
 ---
 
 <section class="background">
+    <Title>Testimonials</Title>
     <div class="container">
-        <Title>Testimonials</Title>
-        <Avatar src="/images/hero-2.jpg" />
+        {
+            testimonials.map(({ avatar, name, text }) => (
+                <Testimonial avatar={avatar} name={name} text={text} />
+            ))
+        }
     </div>
 </section>
 
 <style>
     .background {
         background-color: var(--color-bg);
-        padding: 15rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        margin: 2rem auto;
+    }
+
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 2rem;
     }
 </style>
