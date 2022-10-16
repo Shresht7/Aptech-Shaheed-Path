@@ -37,14 +37,19 @@ const { title } = Astro.props;
 	:root {
 
 		--font-family: 'Titillium Web', system-ui, sans-serif;
+		--font-family-mono: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
 		--font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
 		--font-size-lg: clamp(1.2rem, 0.7vw + 1.2rem, 1.5rem);
 		--font-size-xl: clamp(1.75rem, 1.70vw + 1.4rem, 2.5rem);
 
-		--color-text: hsl(0, 0%, 12%);
-		--color-bg: hsl(0, 0%, 100%);
-		--color-border: hsl(17, 24%, 90%);
+		--color-black: hsl(0, 0%, 12%);
+		--color-white: hsl(0, 0%, 100%);
 		--color-aptech-gold: hsl(44, 88%, 50%);
+
+		--color-text: var(--color-black);
+		--color-bg: var(--color-white);
+
+		--transition-duration: 250ms;
 	}
 
 	/* ============= */
@@ -57,6 +62,10 @@ const { title } = Astro.props;
 		box-sizing: border-box;
 		margin: 0;
 		padding: 0;
+	}
+
+	html, body {
+		line-height: 1.5;
 	}
 
 	img, picture {
@@ -75,7 +84,7 @@ const { title } = Astro.props;
 
 	a:hover {
 		color: var(--color-aptech-gold);
-		transition: color 250ms;
+		transition: color var(--transition-duration);
 	}
 
 	/* ================ */
@@ -85,6 +94,7 @@ const { title } = Astro.props;
 	/* Remove animations for people who've turned them off */
 	@media (prefers-reduced-motion: reduce) {
 		*, *::before, *::after {
+			--transition-duration: 1ms !important;
 			animation-duration: 1ms !important;
 			animation-iteration-count: 1 !important;
 			transition-duration: 1ms !important;
@@ -105,8 +115,7 @@ const { title } = Astro.props;
 	}
 
 	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
+		font-family: var(--font-family-mono);
 	}
 
 	/* ======= */
@@ -121,6 +130,11 @@ const { title } = Astro.props;
 	.full-width {
 		width: 100%;
 	}
+
+	.inverted {
+		--color-text: var(--color-white);
+		--color-bg: var(--color-black);
+	}
 </style>
 
 <style>
@@ -129,6 +143,5 @@ const { title } = Astro.props;
 		font-size: var(--font-size-base, 16px);
 		color: var(--color-text, black);
 		background-color: var(--color-bg, white);
-		line-height: 1.5;
 	}
 </style>
