@@ -1,0 +1,16 @@
+---
+import BasePlate from "../layouts/BasePlate.astro";
+import Title from "../components/utility/Title.astro";
+import Showcase from "../components/Courses/Showcase.astro";
+import Section from "../components/utility/Section.astro";
+
+// Data
+import courses from "../data/courses.json";
+---
+
+<BasePlate title="Courses | Aptech - Shaheed Path">
+    <Section>
+        <Title>Courses</Title>
+        <Showcase courses={courses} />
+    </Section>
+</BasePlate>
