@@ -1,0 +1,26 @@
+---
+import Section from "../../components/utility/Section.astro";
+import Title from "../../components/utility/Title.astro";
+import courses from "../../data/courses.json";
+import BasePlate from "../../layouts/BasePlate.astro";
+
+export function getStaticPaths() {
+    let params = [];
+    for (const course of courses) {
+        params.push({ params: { id: course.id.toString() } });
+    }
+
+    return params;
+}
+
+const { id } = Astro.params;
+
+const course = courses.find((course) => id == course.id);
+---
+
+<BasePlate title={course?.title || "Course " + id}>
+    <Section>
+        <Title>{course?.title || "Course " + id}</Title>
+        <img src={course?.cover} alt="" width={400} height={300} />
+    </Section>
+</BasePlate>
