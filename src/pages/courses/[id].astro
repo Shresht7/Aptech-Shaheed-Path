@@ -7,7 +7,10 @@ import BasePlate from "../../layouts/BasePlate.astro";
 export function getStaticPaths() {
     let params = [];
     for (const course of courses) {
-        params.push({ params: { id: course.id.toString() } });
+        params.push({
+            params: { id: course.id.toString() },
+            props: course,
+        });
     }
 
     return params;
@@ -15,12 +18,12 @@ export function getStaticPaths() {
 
 const { id } = Astro.params;
 
-const course = courses.find((course) => id == course.id);
+const { title, cover } = Astro.props;
 ---
 
-<BasePlate title={course?.title || "Course " + id}>
+<BasePlate title={title || "Course " + id}>
     <Section>
-        <Title>{course?.title || "Course " + id}</Title>
-        <img src={course?.cover} alt="" width={400} height={300} />
+        <Title>{title || "Course " + id}</Title>
+        <img src={cover} alt="" width={400} height={300} />
     </Section>
 </BasePlate>
