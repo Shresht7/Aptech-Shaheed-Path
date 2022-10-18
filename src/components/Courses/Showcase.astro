@@ -1,7 +1,7 @@
 ---
 import CourseCard from "./CourseCard.astro";
 
-const courses = [
+let courses = [
     {
         title: "Course 1",
         cover: "/images/course-1.webp",
@@ -32,7 +32,59 @@ const courses = [
         url: "/courses/5",
         logo: "/assets/tech/logos_python.svg",
     },
+    {
+        title: "Course 5",
+        cover: "/images/course-1.webp",
+        url: "/courses/5",
+        logo: "/assets/tech/logos_python.svg",
+    },
+    {
+        title: "Course 5",
+        cover: "/images/course-1.webp",
+        url: "/courses/5",
+        logo: "/assets/tech/logos_python.svg",
+    },
+    {
+        title: "Course 5",
+        cover: "/images/course-1.webp",
+        url: "/courses/5",
+        logo: "/assets/tech/logos_python.svg",
+    },
+    {
+        title: "Course 5",
+        cover: "/images/course-1.webp",
+        url: "/courses/5",
+        logo: "/assets/tech/logos_python.svg",
+    },
+    {
+        title: "Course 5",
+        cover: "/images/course-1.webp",
+        url: "/courses/5",
+        logo: "/assets/tech/logos_python.svg",
+    },
+    {
+        title: "Course 5",
+        cover: "/images/course-1.webp",
+        url: "/courses/5",
+        logo: "/assets/tech/logos_python.svg",
+    },
+    {
+        title: "Course 5",
+        cover: "/images/course-1.webp",
+        url: "/courses/5",
+        logo: "/assets/tech/logos_python.svg",
+    },
 ];
+
+export interface Props {
+    limit?: number;
+}
+
+const { limit } = Astro.props;
+
+if (limit) {
+    courses = courses.slice(0, limit);
+}
 ---
 
 <div>
