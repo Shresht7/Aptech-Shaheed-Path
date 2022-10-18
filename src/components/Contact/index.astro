@@ -1,8 +1,26 @@
 ---
 import Title from "../utility/Title.astro";
 import Section from "../utility/Section.astro";
+import Details from "./Details.astro";
 ---
 
 <Section>
     <Title>Contact Us</Title>
+    <div>
+        <Title level={3}>Email</Title>
+        <Details>aptechshaheedpath@gmail.com</Details>
+    </div>
+    <div>
+        <Title level={3}>Phone Number</Title>
+        <Details>9369372934</Details>
+    </div>
+    <div>
+        <Title level={3}>Address</Title>
+        <address>
+            <Details>
+                309 - Shopping Square-I, Sector-D, Sushant Golf City,<br />
+                Shaheed Path, Lucknow - 226030
+            </Details>
+        </address>
+    </div>
 </Section>
