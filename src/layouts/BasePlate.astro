@@ -3,6 +3,7 @@
 import Meta from './components/Meta.astro';
 import Header from './components/Header/Header.astro';
 import Footer from './components/Footer/Footer.astro';
+import BackToTop from './components/BackToTop.astro';
 
 //	Props
 export interface Props {
@@ -23,6 +24,7 @@ const { title } = Astro.props;
 		<Header />
 		<slot />
 		<Footer />
+		<BackToTop />
 	</body>
 
 </html>
@@ -143,5 +145,7 @@ const { title } = Astro.props;
 		font-size: var(--font-size-base, 16px);
 		color: var(--color-text, black);
 		background-color: var(--color-bg, white);
+		position: relative;
+		scroll-behavior: smooth;
 	}
 </style>
