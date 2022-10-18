@@ -7,11 +7,17 @@ import ViewMore from "./ViewMore.astro";
 // Utility
 import Title from "../utility/Title.astro";
 import Section from "../utility/Section.astro";
+
+// Data
+import data from "../../data/courses.json";
+
+const limit = 5;
+const courses = data.slice(0, limit);
 ---
 
 <Section>
     <Title>COURSES</Title>
-    <Showcase limit={5} />
+    <Showcase courses={courses} />
     <ViewMore />
     <FloatingLogos />
 </Section>
