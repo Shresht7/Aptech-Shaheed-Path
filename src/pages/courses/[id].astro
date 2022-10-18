@@ -5,15 +5,15 @@ import courses from "../../data/courses.json";
 import BasePlate from "../../layouts/BasePlate.astro";
 
 export function getStaticPaths() {
-    let params = [];
+    let paths = [];
     for (const course of courses) {
-        params.push({
+        paths.push({
             params: { id: course.id.toString() },
             props: course,
         });
     }
 
-    return params;
+    return paths;
 }
 
 const { id } = Astro.params;
