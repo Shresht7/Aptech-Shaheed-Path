@@ -2,4 +2,4 @@
 // UTILITY FUNCTIONS
 // -----------------
 
-export * from './getRandomNumber'
+export * from './random'
