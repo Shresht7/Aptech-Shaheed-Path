@@ -1,9 +1,10 @@
 ---
 export interface Props {
     level?: number;
+    className?: string;
 }
 
-const { level = 2 } = Astro.props;
+const { level = 2, className } = Astro.props;
 
 let Component;
 switch (level) {
@@ -31,7 +32,7 @@ switch (level) {
 }
 ---
 
-<Component>
+<Component class:list={[className]}>
     <slot />
 </Component>
 
@@ -44,5 +45,9 @@ switch (level) {
     h6 {
         text-align: center;
         text-transform: uppercase;
+    }
+
+    .gold {
+        color: var(--color-aptech-gold);
     }
 </style>
