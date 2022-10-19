@@ -5,21 +5,32 @@ import Logo from "../Header/Logo.astro";
 <div>
     <p class="gold">Social Links</p>
     <div id="icon-container">
-        <div class="icon"></div>
-        <div class="icon"></div>
-        <div class="icon"></div>
-        <div class="icon"></div>
-        <div class="icon"></div>
+        <a href="#">
+            <div class="icon">
+                <img src="/assets/social/facebook.svg" alt="facebook" />
+            </div>
+        </a>
+        <a href="#">
+            <div class="icon">
+                <img src="/assets/social/twitter.svg" alt="twitter" />
+            </div>
+        </a>
+        <a href="#">
+            <div class="icon">
+                <img src="/assets/social/instagram.png" alt="instagram" />
+            </div>
+        </a>
+        <a href="/contact">
+            <div class="icon">
+                <img src="/assets/social/gmail.svg" alt="gmail" />
+            </div>
+        </a>
     </div>
 </div>
 
 <style>
     div {
         text-align: right;
-    }
-
-    .gold {
-        color: var(--color-aptech-gold);
     }
 
     #icon-container {
@@ -33,6 +44,12 @@ import Logo from "../Header/Logo.astro";
     .icon {
         width: 48px;
         height: 48px;
+        padding: 4px;
         background-color: #333;
+        transition: background-color 250ms ease-in;
+    }
+
+    .icon:hover {
+        background-color: #777;
     }
 </style>
