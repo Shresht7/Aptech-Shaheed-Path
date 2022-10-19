@@ -113,3 +113,7 @@ code {
     --color-text: var(--color-white);
     --color-bg: var(--color-black);
 }
+
+.gold {
+    color: var(--color-aptech-gold);
+}
