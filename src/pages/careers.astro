@@ -2,6 +2,7 @@
 import BasePlate from "../layouts/BasePlate.astro";
 import Section from "../components/utility/Section.astro";
 import Title from "../components/utility/Title.astro";
+import Input from "../components/Form/Input.astro";
 ---
 
 <BasePlate title="Career | Aptech Shaheed Path">
@@ -13,6 +14,11 @@ import Title from "../components/utility/Title.astro";
                 following form; or email your C.V. to
                 aptechshaheedpath@gmail.com
             </p>
+            <!-- TODO: Create Career Form -->
+            <form>
+                <Input label="Name" />
+                <Input label="Email" />
+            </form>
         </Section>
     </main>
 </BasePlate>
