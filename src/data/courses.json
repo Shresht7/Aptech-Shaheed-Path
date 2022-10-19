@@ -2,84 +2,84 @@
     {
         "id": 1,
         "title": "Course 1",
-        "cover": "/images/course-1.webp",
+        "cover": "/images/courses/1.webp",
         "url": "/courses/1",
         "logo": "/assets/tech/logos_c.svg"
     },
     {
         "id": 2,
         "title": "Course 2",
-        "cover": "/images/course-2.webp",
+        "cover": "/images/courses/2.webp",
         "url": "/courses/2",
         "logo": "/assets/tech/logos_cpp.svg"
     },
     {
         "id": 3,
         "title": "Course 3",
-        "cover": "/images/course-3.webp",
+        "cover": "/images/courses/3.webp",
         "url": "/courses/3",
         "logo": "/assets/tech/logos_javascript.svg"
     },
     {
         "id": 4,
         "title": "Course 4",
-        "cover": "/images/course-2.webp",
+        "cover": "/images/courses/2.webp",
         "url": "/courses/4",
         "logo": "/assets/tech/logos_msoffice.svg"
     },
     {
         "id": 5,
         "title": "Course 5",
-        "cover": "/images/course-1.webp",
+        "cover": "/images/courses/1.webp",
         "url": "/courses/5",
         "logo": "/assets/tech/logos_python.svg"
     },
     {
         "id": 6,
         "title": "Course 6",
-        "cover": "/images/course-1.webp",
+        "cover": "/images/courses/1.webp",
         "url": "/courses/5",
         "logo": "/assets/tech/logos_python.svg"
     },
     {
         "id": 7,
         "title": "Course 7",
-        "cover": "/images/course-2.webp",
+        "cover": "/images/courses/2.webp",
         "url": "/courses/5",
         "logo": "/assets/tech/logos_python.svg"
     },
     {
         "id": 8,
         "title": "Course 8",
-        "cover": "/images/course-3.webp",
+        "cover": "/images/courses/3.webp",
         "url": "/courses/5",
         "logo": "/assets/tech/logos_python.svg"
     },
     {
         "id": 9,
         "title": "Course 9",
-        "cover": "/images/course-3.webp",
+        "cover": "/images/courses/3.webp",
         "url": "/courses/5",
         "logo": "/assets/tech/logos_python.svg"
     },
     {
         "id": 10,
         "title": "Course 10",
-        "cover": "/images/course-2.webp",
+        "cover": "/images/courses/2.webp",
         "url": "/courses/5",
         "logo": "/assets/tech/logos_python.svg"
     },
     {
         "id": 11,
         "title": "Course 11",
-        "cover": "/images/course-1.webp",
+        "cover": "/images/courses/1.webp",
         "url": "/courses/5",
         "logo": "/assets/tech/logos_python.svg"
     },
     {
         "id": 12,
         "title": "Course 12",
-        "cover": "/images/course-1.webp",
+        "cover": "/images/courses/1.webp",
         "url": "/courses/5",
         "logo": "/assets/tech/logos_python.svg"
     }
