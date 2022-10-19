@@ -19,7 +19,5 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 
-__notes__
-
 # Local Netlify folder
 .netlify
