@@ -42,3 +42,53 @@ const { title } = Astro.props;
 		scroll-behavior: smooth;
 	}
 </style>
+
+<script>
+	    /** Total height of the page */
+		const totalHeight =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+
+    /** Boolean flag that determines if the user is scrolling */
+    let scrolling = false;
+
+    /** Scroll progress ratio */
+    let scrollProgress = 0;
+
+    /** On-Scroll Handler Function */
+    function onScrollUpdate(scrollProgress: number) {
+        const header = document.getElementById("header")!;
+        //  Update the CSS property to update progressbar width
+        header.style.setProperty(
+            "--scroll-progress",
+            `${scrollProgress * 100}%`
+        );
+
+		if (scrollProgress > 0.33) {
+			document.getElementById('back-to-top')?.classList.add('visible')
+		} else {
+			document.getElementById('back-to-top')?.classList.remove('visible')
+		}
+    }
+
+    document.addEventListener("scroll", () => {
+        //  Skip and return early if still processing the previous animation frame
+        if (scrolling) {
+            return;
+        }
+
+        window.requestAnimationFrame(() => {
+            //  Calculate the scroll progress
+            scrollProgress = window.scrollY / totalHeight;
+
+            //  Call the on-scroll handler
+            onScrollUpdate(scrollProgress);
+
+            //  Unlock operation
+            scrolling = false;
+        });
+
+        //  Lock operation
+        scrolling = true;
+    });
+</script>

@@ -21,7 +21,12 @@ import Arrow from "../../components/svg/arrow.astro";
         outline-offset: 4px;
         z-index: 100;
         mix-blend-mode: difference;
-        transition: outline 250ms ease-in-out;
+        transition: all 250ms ease-in-out;
+        scale: 0;
+    }
+
+    #back-to-top.visible {
+        scale: 1;
     }
 
     #back-to-top:hover {
