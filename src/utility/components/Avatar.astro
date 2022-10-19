@@ -8,26 +8,21 @@ export interface Props {
 const { src, alt = "", size = "100px" } = Astro.props;
 ---
 
-<div>
+<div class="centered-content">
     <img src={src} alt={alt} width={size} height={size} />
 </div>
 
-<style define:vars={{ size }}>
+<style>
     div {
-        --default-size: 100px;
         --border-outline-thickness: 5px;
 
-        display: grid;
-        place-content: center;
         object-fit: cover;
-        width: var(--size, --default-size);
-        height: var(--size, --default-size);
         aspect-ratio: 1 / 1;
         outline: var(--border-outline-thickness) solid var(--color-aptech-gold);
+        transition: outline-offset var(--transition-duration);
         border-radius: 50%;
-        position: relative;
         overflow: hidden;
-        transition: outline-offset 250ms;
+        position: relative;
     }
 
     div::after {
@@ -41,7 +36,6 @@ const { src, alt = "", size = "100px" } = Astro.props;
             var(--color-bg);
         border-radius: 50%;
         z-index: 2;
-        transition: border 250ms;
     }
 
     div:hover {

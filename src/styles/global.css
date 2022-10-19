@@ -117,3 +117,12 @@ code {
 .gold {
     color: var(--color-aptech-gold);
 }
+
+.centered-content {
+    display: grid;
+    place-content: center;
+}
+
+.rounded {
+    border-radius: 50%;
+}
