@@ -55,7 +55,7 @@ import Section from "../utility/Section.astro";
     const form = document.getElementById("contact-form") as HTMLFormElement;
     form.addEventListener("submit", async (e: SubmitEvent) => {
         e.preventDefault();
-        const res = await fetch("/.netlify/functions/contact", {
+        const res = await fetch("/api/contact-form-submission", {
             method: "POST",
             body: "hello world",
         });
