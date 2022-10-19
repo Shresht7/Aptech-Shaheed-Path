@@ -1,0 +1,21 @@
+---
+import Section from "../components/utility/Section.astro";
+import Title from "../components/utility/Title.astro";
+import BasePlate from "../layouts/BasePlate.astro";
+
+import type { MarkdownLayoutProps } from "astro";
+
+type Props = MarkdownLayoutProps<{ id: number; title: string; cover: string }>;
+
+const {
+    frontmatter: { id, title, cover },
+} = Astro.props;
+---
+
+<BasePlate title={title || "Course " + id}>
+    <Section>
+        <Title>{title || "Course " + id}</Title>
+        <img src={cover} alt="" width={400} height={300} />
+        <slot />
+    </Section>
+</BasePlate>
