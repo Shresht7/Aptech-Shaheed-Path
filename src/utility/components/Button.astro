@@ -1,20 +1,22 @@
 ---
 export interface Props {
     type?: "button" | "reset" | "submit" | null;
-    label: string;
     variant?: "primary" | "outline";
 }
 
-const { label, type, variant = "primary" } = Astro.props;
+const { type, variant = "primary" } = Astro.props;
 ---
 
-<button type={type} class={`${variant}`}>{label}</button>
+<button type={type} class:list={[variant]}>
+    <slot />
+</button>
 
 <style>
     button {
         --color-button-outline: var(--color-aptech-gold);
         --color-button-background: var(--color-aptech-gold);
         --color-button-text: var(--color-bg);
+
         padding: 0.5rem 1.25rem;
         background-color: var(--color-button-background);
         color: var(--color-button-text);
@@ -22,7 +24,7 @@ const { label, type, variant = "primary" } = Astro.props;
         border: 2px solid var(--color-button-background);
         border-radius: 0.25rem;
         outline: 2px solid var(--color-button-outline);
-        transition: outline 250ms ease-in;
+        transition: outline-offset var(--transition-duration) ease-in;
         cursor: pointer;
     }
 
