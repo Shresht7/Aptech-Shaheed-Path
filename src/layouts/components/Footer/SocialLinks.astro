@@ -1,0 +1,38 @@
+---
+import Logo from "../Header/Logo.astro";
+---
+
+<div>
+    <p class="gold">Social Links</p>
+    <div id="icon-container">
+        <div class="icon"></div>
+        <div class="icon"></div>
+        <div class="icon"></div>
+        <div class="icon"></div>
+        <div class="icon"></div>
+    </div>
+</div>
+
+<style>
+    div {
+        text-align: right;
+    }
+
+    .gold {
+        color: var(--color-aptech-gold);
+    }
+
+    #icon-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .icon {
+        width: 48px;
+        height: 48px;
+        background-color: #333;
+    }
+</style>

@@ -1,14 +1,34 @@
+---
+import Section from "../../../components/utility/Section.astro";
+import Contact from "./Contact.astro";
+import Copyright from "./Copyright.astro";
+import SocialLinks from "./SocialLinks.astro";
+---
+
 <footer>
     <div class="container">
-        <div>Copyright &copy; 2022 - Aptech Shaheed Path</div>
+        <Section classNames="inverted">
+            <div id="footer-information">
+                <Contact />
+                <SocialLinks />
+            </div>
+            <Copyright />
+        </Section>
     </div>
 </footer>
 
 <style>
     footer {
-        padding: 10rem 0;
         text-align: center;
         background-color: var(--color-text);
         color: var(--color-bg);
+    }
+
+    #footer-information {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
     }
 </style>
