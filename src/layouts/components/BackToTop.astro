@@ -6,6 +6,9 @@ import Arrow from "../../components/svg/arrow.astro";
     <div class="arrow-container">
         <Arrow />
     </div>
+    <div id="back-to-top-tooltip">
+        <p>Back to Top</p>
+    </div>
 </a>
 
 <style>
@@ -13,15 +16,21 @@ import Arrow from "../../components/svg/arrow.astro";
         position: fixed;
         bottom: 2rem;
         right: 2rem;
+
         width: 2rem;
         height: 2rem;
-        border-radius: 50%;
+
         background-color: var(--color-aptech-gold);
+        mix-blend-mode: difference;
+
+        border-radius: 50%;
+
         outline: 2px solid var(--color-aptech-gold);
         outline-offset: 4px;
+
         z-index: 100;
-        mix-blend-mode: difference;
-        transition: all 250ms ease-in-out;
+
+        transition: all var(--transition-duration) ease-in-out;
         scale: 0;
     }
 
@@ -34,12 +43,48 @@ import Arrow from "../../components/svg/arrow.astro";
     }
 
     .arrow-container {
+        --color-text: white;
+
         width: 100%;
         height: 100%;
+
         display: grid;
         place-content: center;
+
         rotate: -90deg;
         scale: 0.75;
-        --color-text: white;
+    }
+
+    #back-to-top-tooltip {
+        position: absolute;
+        top: 0;
+        left: -6rem;
+        translate: 0% 10%;
+
+        font-size: 0.8rem;
+        color: var(--color-bg);
+
+        background-color: var(--color-text);
+
+        padding: 0.25rem 0.5rem;
+
+        opacity: 0;
+        transition: opacity var(--transition-duration) ease-in;
+        transition-delay: 500ms;
+    }
+
+    #back-to-top-tooltip.visible {
+        opacity: 1;
     }
 </style>
+
+<script>
+    const button = document.getElementById("back-to-top");
+    const tooltip = document.getElementById("back-to-top-tooltip");
+    button?.addEventListener("mouseover", () => {
+        tooltip?.classList.add("visible");
+    });
+    button?.addEventListener("mouseleave", () => {
+        tooltip?.classList.remove("visible");
+    });
+</script>
