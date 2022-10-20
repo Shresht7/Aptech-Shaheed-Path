@@ -34,6 +34,11 @@ const { id, cover, title, description, logo } = Astro.props;
         scale: 1.025;
     }
 
+    .image-container {
+        aspect-ratio: 4 / 3;
+        overflow: hidden;
+    }
+
     img {
         border-radius: 1rem;
     }
