@@ -64,7 +64,7 @@ const { title } = Astro.props;
             `${scrollProgress * 100}%`
         );
 
-		if (scrollProgress > 0.33) {
+		if (scrollProgress > 0.20) {
 			document.getElementById('back-to-top')?.classList.add('visible')
 		} else {
 			document.getElementById('back-to-top')?.classList.remove('visible')
@@ -79,7 +79,7 @@ const { title } = Astro.props;
 
         window.requestAnimationFrame(() => {
             //  Calculate the scroll progress
-            scrollProgress = window.scrollY / totalHeight;
+            scrollProgress = Math.min(window.scrollY / totalHeight, 1);
 
             //  Call the on-scroll handler
             onScrollUpdate(scrollProgress);
