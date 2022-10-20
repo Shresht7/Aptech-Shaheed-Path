@@ -1,6 +1,5 @@
 ---
 //  Components
-import Details from "./Details.astro";
 import Title from "../../utility/components/Title.astro";
 import Section from "../../utility/components/Section.astro";
 ---
@@ -9,19 +8,26 @@ import Section from "../../utility/components/Section.astro";
     <Title>Contact Us</Title>
     <div>
         <Title level={3} className="gold">Email</Title>
-        <Details>aptechshaheedpath@gmail.com</Details>
+        <p>aptechshaheedpath@gmail.com</p>
     </div>
     <div>
         <Title level={3} className="gold">Phone Number</Title>
-        <Details>9369372934</Details>
+        <p>9369372934</p>
     </div>
     <div>
         <Title level={3} className="gold">Address</Title>
         <address>
-            <Details>
+            <p>
                 309 - Shopping Square-I, Sector-D, Sushant Golf City,<br />
                 Shaheed Path, Lucknow - 226030
-            </Details>
+            </p>
         </address>
     </div>
 </Section>
+
+<style>
+    p {
+        font-size: 1.75rem;
+        text-align: center;
+    }
+</style>
