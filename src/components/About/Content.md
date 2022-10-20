@@ -1,0 +1,7 @@
+**Aptech Learning** is a _world-class_ institute known for its **pioneering educational courses** since more than than **three decades**. It has trained **millions** of students (_across 40 countries_) and continues to help them acquire necessary skills to land them their **dream jobs**!
+
+With _advanced training and methods_, **Aptech Learning** has built a strong _presence_ and _credibility_ across the globe. **Aptech Learning** enables students to bloom into **job-ready professionals**.
+
+**Aptech Learning** offers programs enabling students to develop a complete understanding of the _latest technologies_ (like `Java`, `.NET`, `OST`, `E-Commerce`) in the **I.T. industry**. The programs are designed to train students in _industry-relevant knowledge_ and ind-depth _professional skills_.
+
+**Aptech Learning** enhances the learning of its students with modern training methods which are both **Educative** and **Interactive**. Adequate emphasis is laid on both, _theory_ as well as _practical-based learning_, in order to give the student **complete training**, right from _Fundamentals_ to _Advanced_ level.

@@ -2,33 +2,24 @@
 // Components
 import Title from "../../utility/components/Title.astro";
 import Section from "../../utility/components/Section.astro";
+import Content from "./Content.md";
 ---
 
 <Section classNames="inverted">
     <Title>About Us</Title>
-    <p>
-        Aptech Learning is a world-class institute known for its pioneering
-        educational courses since more than than three decades. It has trained
-        millions of students and continues to help them acquire necessary skills
-        to land them their dream jobs!
-    </p>
-    <p>
-        With advanced training and methods, Aptech Learning has built a strong
-        presence and credibility across the globe. Aptech Learning enables
-        students to bloom into job-ready professionals.
-    </p>
-    <p>
-        Aptech Learning offers programs enabling students to develop a complete
-        understanding of the latest technologies (like Java, .NET, OST,
-        E-Commerce) in the I.T. industry. The programs are designed to train
-        students in industry-relevant knowledge and ind-depth professional
-        skills.
-    </p>
-    <p>
-        Aptech Learning enhances the learning of its students with modern
-        training methods which are both Educative and Interactive. Adequate
-        emphasis is laid on both, theory as well as practical-based learning, in
-        order to give the student complete training, right from Fundamentals to
-        Advanced level.
-    </p>
+    <div>
+        <Content />
+    </div>
 </Section>
+
+<style>
+    div {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        width: 75%;
+    }
+</style>
