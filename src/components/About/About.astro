@@ -20,8 +20,14 @@ import Content from "./Content.md";
         justify-content: center;
         align-items: center;
         gap: 1.5rem;
-        width: min(90%, 75vw);
+        width: 75vw;
         padding-inline: 5vw;
         color: #999;
+    }
+
+    @media (width < 768px) {
+        div {
+            width: 95vw;
+        }
     }
 </style>
