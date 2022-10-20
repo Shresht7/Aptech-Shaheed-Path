@@ -11,6 +11,17 @@ import Arrow from "../../components/svg/arrow.astro";
     </div>
 </a>
 
+<script>
+    const button = document.getElementById("back-to-top");
+    const tooltip = document.getElementById("back-to-top-tooltip");
+    button?.addEventListener("mouseover", () => {
+        tooltip?.classList.add("visible");
+    });
+    button?.addEventListener("mouseleave", () => {
+        tooltip?.classList.remove("visible");
+    });
+</script>
+
 <style>
     #back-to-top {
         position: fixed;
@@ -64,8 +75,6 @@ import Arrow from "../../components/svg/arrow.astro";
         font-size: 0.8rem;
         color: var(--color-bg);
 
-        background-color: var(--color-text);
-
         padding: 0.25rem 0.5rem;
 
         opacity: 0;
@@ -76,15 +85,28 @@ import Arrow from "../../components/svg/arrow.astro";
     #back-to-top-tooltip.visible {
         opacity: 1;
     }
-</style>
 
-<script>
-    const button = document.getElementById("back-to-top");
-    const tooltip = document.getElementById("back-to-top-tooltip");
-    button?.addEventListener("mouseover", () => {
-        tooltip?.classList.add("visible");
-    });
-    button?.addEventListener("mouseleave", () => {
-        tooltip?.classList.remove("visible");
-    });
-</script>
+    #back-to-top-tooltip::before,
+    #back-to-top-tooltip::after {
+        content: "";
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        background-color: var(--color-text);
+
+        z-index: -1;
+    }
+
+    #back-to-top-tooltip::before {
+        transform: skewX(30deg);
+    }
+
+    #back-to-top-tooltip::after {
+        transform: skewX(-30deg);
+    }
+</style>
