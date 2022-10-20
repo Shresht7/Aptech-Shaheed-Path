@@ -1,13 +1,10 @@
 ---
 import CourseCard from "./CourseCard.astro";
+import type { CourseDetails } from "../../types";
+import type { MarkdownInstance } from "astro";
 
 export interface Props {
-    courses: {
-        title: string;
-        cover: string;
-        url: string;
-        logo: string;
-    }[];
+    courses: MarkdownInstance<CourseDetails>[];
 }
 
 const { courses } = Astro.props;
@@ -17,10 +14,11 @@ const { courses } = Astro.props;
     {
         courses.map((course) => (
             <CourseCard
-                title={course.title}
-                cover={course.cover}
-                url={course.url}
-                logo={course.logo}
+                id={course.frontmatter.id}
+                title={course.frontmatter.title}
+                cover={course.frontmatter.cover}
+                logo={course.frontmatter.logo}
+                description={course.frontmatter.description}
             />
         ))
     }

@@ -8,11 +8,13 @@ import ViewMore from "./ViewMore.astro";
 import Title from "../../utility/components/Title.astro";
 import Section from "../../utility/components/Section.astro";
 
-// Data
-import data from "../../data/courses.json";
+//  Type Definitions
+import type { CourseDetails } from "../../types";
 
 const limit = 5;
-const courses = data.slice(0, limit);
+const courses = (
+    await Astro.glob<CourseDetails>("../../pages/courses/*.md")
+).slice(0, limit);
 ---
 
 <Section>

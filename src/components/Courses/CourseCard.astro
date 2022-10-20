@@ -1,23 +1,21 @@
 ---
 export interface Props {
+    id: string;
     title: string;
     cover: string;
-    url: string;
     logo: string;
+    description: string;
 }
 
-const { title, cover, url, logo } = Astro.props;
+const { id, cover, title, description, logo } = Astro.props;
 ---
 
-<a href={url} class="card-outline">
+<a href={`/courses/${id}`} class="card-outline">
     <div class="image-container"><img src={cover} alt={title} /></div>
     <div class="card-details">
         <div class="card-text">
             <h3>{title}</h3>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Quisquam voluptate temporibus ipsam repudiandae quae nemo.
-            </p>
+            <p>{description}</p>
         </div>
         <img src={logo} alt={title} />
     </div>
