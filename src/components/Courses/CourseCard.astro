@@ -36,7 +36,13 @@ const { id, cover, title, description, logo } = Astro.props;
 
     .image-container {
         aspect-ratio: 4 / 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        object-fit: contain;
         overflow: hidden;
+        border-radius: 1rem;
     }
 
     img {
