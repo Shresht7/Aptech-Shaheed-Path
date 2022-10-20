@@ -127,7 +127,9 @@ code {
     border-radius: 50%;
 }
 
+/* =============== */
 /* MARKDOWN STYLES */
+/* =============== */
 
 .markdown strong {
     color: var(--color-aptech-gold);
