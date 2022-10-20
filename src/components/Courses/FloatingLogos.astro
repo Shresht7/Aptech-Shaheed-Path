@@ -50,16 +50,18 @@ const logos = [
 }));
 ---
 
-{
-    logos.map((logo) => (
-        <div
-            class="floating-logo"
-            style={`--x: ${logo.x}; --y: ${logo.y}; --animation-duration: ${logo.duration}; --animation-delay: ${logo.delay}; --travel: ${logo.travel}`}
-        >
-            <img src={logo.src} alt={logo.name} />
-        </div>
-    ))
-}
+<div id="floating-logo-container">
+    {
+        logos.map((logo) => (
+            <div
+                class="floating-logo"
+                style={`--x: ${logo.x}; --y: ${logo.y}; --animation-duration: ${logo.duration}; --animation-delay: ${logo.delay}; --travel: ${logo.travel}`}
+            >
+                <img src={logo.src} alt={logo.name} />
+            </div>
+        ))
+    }
+</div>
 
 <style>
     .floating-logo {
@@ -81,6 +83,12 @@ const logos = [
         }
         100% {
             translate: 0 var(--travel);
+        }
+    }
+
+    @media (width < 768px) {
+        #floating-logo-container {
+            display: none;
         }
     }
 </style>
