@@ -126,3 +126,17 @@ code {
 .rounded {
     border-radius: 50%;
 }
+
+/* MARKDOWN STYLES */
+
+.markdown strong {
+    color: var(--color-aptech-gold);
+}
+
+.markdown em {
+    color: var(--color-text);
+}
+
+.markdown code {
+    font-size: 0.8rem;
+}

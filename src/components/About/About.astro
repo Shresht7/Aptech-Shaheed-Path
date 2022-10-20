@@ -7,19 +7,21 @@ import Content from "./Content.md";
 
 <Section classNames="inverted">
     <Title>About Us</Title>
-    <div>
+    <div class="markdown">
         <Content />
     </div>
 </Section>
 
 <style>
     div {
-        text-align: center;
+        text-align: justify;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 1.5rem;
-        width: 75%;
+        width: min(90%, 75vw);
+        padding-inline: 5vw;
+        color: #999;
     }
 </style>
