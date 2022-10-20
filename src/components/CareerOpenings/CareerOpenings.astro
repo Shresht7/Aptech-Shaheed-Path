@@ -1,0 +1,45 @@
+---
+import Button from "../../utility/components/Button.astro";
+---
+
+<section class="container">
+    <li>
+        <h3>Counsellor</h3>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
+            exercitationem quae unde perspiciatis voluptate esse iste ad
+            suscipit tempore quibusdam ipsam, dicta laborum, aut quis.
+        </p>
+        <Button>APPLY</Button>
+    </li>
+    <li>
+        <h3>Instructor</h3>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
+            exercitationem quae unde perspiciatis voluptate esse iste ad
+            suscipit tempore quibusdam ipsam, dicta laborum, aut quis.
+        </p>
+        <Button>APPLY</Button>
+    </li>
+</section>
+
+<style>
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    li {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3rem;
+        padding: 1rem 1rem;
+        border-bottom: 2px solid #777;
+    }
+</style>
