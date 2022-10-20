@@ -4,4 +4,5 @@ export interface CourseDetails {
     title: string;
     description: string;
     logo: string;
+    priority: number
 }

@@ -4,6 +4,7 @@ title: Artificial Intelligence and Machine Learning
 description: Learn artificial intelligence and machine learning concepts
 logo: '/assets/tech/logos_ai.svg'
 cover: '/images/courses/ai.jpg'
+priority: 3
 layout: '../../layouts/CourseLayout.astro'
 ---
 

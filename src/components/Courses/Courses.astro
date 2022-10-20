@@ -12,9 +12,18 @@ import Section from "../../utility/components/Section.astro";
 import type { CourseDetails } from "../../types";
 
 const limit = 5;
-const courses = (
-    await Astro.glob<CourseDetails>("../../pages/courses/*.md")
-).slice(0, limit);
+const data = await Astro.glob<CourseDetails>("../../pages/courses/*.md");
+
+let courses = [];
+for (const id of [
+    "microsoft-office",
+    "it-for-beginners-vidya",
+    "artificial-intelligence-and-machine-learning",
+    "programming-in-python",
+    "web-development",
+]) {
+    courses.push(...data.filter((c) => c.frontmatter.id === id));
+}
 ---
 
 <Section>
