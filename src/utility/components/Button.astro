@@ -1,13 +1,24 @@
 ---
 export interface Props {
     type?: "button" | "reset" | "submit" | null;
-    variant?: "primary" | "outline";
+    variant?: "primary" | "outline" | "link";
+    bgColor?: string;
+    color?: string;
 }
 
-const { type, variant = "primary" } = Astro.props;
+const {
+    type,
+    variant = "primary",
+    color = "var(--color-bg)",
+    bgColor = "var(--color-aptech-gold)",
+} = Astro.props;
 ---
 
-<button type={type} class:list={[variant]}>
+<button
+    type={type}
+    class:list={[variant]}
+    style={`--color-button-text: ${color}; --color-button-background: ${bgColor};`}
+>
     <slot />
 </button>
 
@@ -28,9 +39,16 @@ const { type, variant = "primary" } = Astro.props;
         cursor: pointer;
     }
 
-    button.outline {
+    button.outline,
+    button.link {
         background-color: transparent;
         color: inherit;
+    }
+
+    button.link {
+        outline: none;
+        border: none;
+        transition: scale var(--transition-duration) ease-in;
     }
 
     button:hover {
@@ -39,5 +57,9 @@ const { type, variant = "primary" } = Astro.props;
 
     button.outline:hover {
         outline-color: var(--color-button-background);
+    }
+
+    button.link:hover {
+        color: var(--color-aptech-gold);
     }
 </style>
