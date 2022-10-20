@@ -1,31 +1,33 @@
+---
+const icons = [
+    { name: "facebook", src: "facebook.svg", href: "#" },
+    { name: "twitter", src: "twitter.svg", href: "#" },
+    { name: "instagram", src: "instagram.png", href: "#" },
+    { name: "gmail", src: "gmail.svg", href: "#" },
+];
+---
+
 <div>
     <p class="gold">Social Links</p>
     <div id="icon-container">
-        <a href="#">
-            <div class="icon">
-                <img src="/assets/social/facebook.svg" alt="facebook" />
-            </div>
-        </a>
-        <a href="#">
-            <div class="icon">
-                <img src="/assets/social/twitter.svg" alt="twitter" />
-            </div>
-        </a>
-        <a href="#">
-            <div class="icon">
-                <img src="/assets/social/instagram.png" alt="instagram" />
-            </div>
-        </a>
-        <a href="/contact">
-            <div class="icon">
-                <img src="/assets/social/gmail.svg" alt="gmail" />
-            </div>
-        </a>
+        {
+            icons.map((icon) => (
+                <a href={icon.href}>
+                    <div class="icon">
+                        <img
+                            src={`/assets/social/${icon.src}`}
+                            alt={icon.name}
+                        />
+                    </div>
+                </a>
+            ))
+        }
     </div>
 </div>
 
 <style>
     div {
+        width: 100%;
         text-align: right;
     }
 
@@ -47,5 +49,15 @@
 
     .icon:hover {
         background-color: #777;
+    }
+
+    @media (width < 768px) {
+        div {
+            text-align: center;
+        }
+
+        #icon-container {
+            justify-content: center;
+        }
     }
 </style>

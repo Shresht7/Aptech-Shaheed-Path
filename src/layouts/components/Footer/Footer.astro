@@ -30,5 +30,12 @@ import SocialLinks from "./SocialLinks.astro";
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
+        gap: 2rem;
+    }
+
+    @media (width < 768px) {
+        #footer-information {
+            flex-direction: column-reverse;
+        }
     }
 </style>
