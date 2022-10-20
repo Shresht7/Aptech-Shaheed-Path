@@ -8,6 +8,9 @@ const navRoutes = {
 ---
 
 <nav>
+    <div id="hamburger">
+        <img src="/assets/hamburger.svg" alt="hamburger-menu" />
+    </div>
     <ul>
         {
             Object.entries(navRoutes).map(([route, href]) => (
@@ -19,7 +22,19 @@ const navRoutes = {
     </ul>
 </nav>
 
+<script>
+    const navList = document.querySelector("nav ul");
+    const hamburger = document.getElementById("hamburger");
+    hamburger?.addEventListener("click", () => {
+        navList?.classList.toggle("visible");
+    });
+</script>
+
 <style>
+    nav {
+        position: relative;
+    }
+
     ul {
         display: flex;
         flex-direction: row;
@@ -28,13 +43,47 @@ const navRoutes = {
         gap: 3vw;
     }
 
+    #hamburger {
+        display: none;
+
+        cursor: pointer;
+    }
+
+    @media (width < 960px) {
+        #hamburger {
+            display: block;
+        }
+
+        ul {
+            position: fixed;
+            top: clamp(50px, 10vw, 10vh);
+            left: 0;
+            width: 100%;
+            padding: 2rem 0rem;
+
+            flex-direction: column;
+
+            background-color: var(--color-text);
+            color: var(--color-bg);
+
+            opacity: 0;
+            transition: opacity var(--transition-duration) ease-in;
+            z-index: -10;
+        }
+
+        ul.visible {
+            opacity: 1;
+            z-index: 10;
+        }
+    }
+
     li {
         list-style: none;
     }
 
     a {
         letter-spacing: 0.15ch;
-        transition: ease 250ms;
+        transition: color var(--transition-duration) ease-in;
     }
 
     a:hover {
