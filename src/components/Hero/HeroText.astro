@@ -4,13 +4,24 @@ import Title from "../../utility/components/Title.astro";
 
 <div id="text-container" class="container">
     <div id="text">
-        <Title level={1}>Unleash Your Potential</Title>
-        <p>
-            Aptech Learning is a world-class institute known for its pioneering
-            educational courses since more than than three decades. It has
-            trained millions of students (across 40 countries) and continues to
-            help them acquire necessary skills to land them their dream jobs!
-        </p>
+        <div>
+            <Title level={1} className="gold">Aptech Learning</Title>
+            <div id="branch-title">
+                <div></div>
+                <p>Shaheed Path</p>
+                <div></div>
+            </div>
+        </div>
+        <div>
+            <p id="premier-text">
+                A premier institute of Computer Education of Internation
+                Reputation
+            </p>
+            <address>
+                309, Shopping Square-I, Sector-D, Sushant Golf City, Shaheed
+                Path, Lucknow - 226030
+            </address>
+        </div>
     </div>
 </div>
 
@@ -60,7 +71,35 @@ import Title from "../../utility/components/Title.astro";
             translate: 0 20px;
         }
         to {
-            traslate: 0px;
+            translate: 0px;
         }
+    }
+
+    #branch-title {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        text-transform: uppercase;
+    }
+
+    #branch-title div {
+        flex: 1;
+        width: 6.5rem;
+        height: 0.75ch;
+        background-color: var(--color-bg);
+    }
+
+    #branch-title p {
+        flex-shrink: 1;
+    }
+
+    #premier-text {
+        font-size: 1.25rem;
+    }
+
+    address {
+        color: #999;
     }
 </style>
