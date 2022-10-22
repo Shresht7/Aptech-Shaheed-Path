@@ -4,6 +4,7 @@ export interface Props {
     variant?: "primary" | "outline" | "link";
     bgColor?: string;
     color?: string;
+    id?: string;
 }
 
 const {
@@ -11,10 +12,12 @@ const {
     variant = "primary",
     color = "var(--color-bg)",
     bgColor = "var(--color-aptech-gold)",
+    id,
 } = Astro.props;
 ---
 
 <button
+    id={id}
     type={type}
     class:list={[variant]}
     style={`--color-button-text: ${color}; --color-button-background: ${bgColor};`}
