@@ -137,6 +137,15 @@ code {
 /* MARKDOWN STYLES */
 /* =============== */
 
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+    margin-block: 1rem;
+}
+
 .markdown strong {
     color: var(--color-aptech-gold);
 }
