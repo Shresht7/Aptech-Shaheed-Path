@@ -1,7 +1,9 @@
 ---
 id: it-for-beginners-vidya
 title: IT for Beginners (Vidya)
-description: Aptech Learning offers programs enabling students to develop a complete understanding of the latest technologies in the I.T. industry.
+description: Take your first steps towards computer literacy and ensure that your fundamentals are strong.
+duration: 8 Weeks (2 Months)
+fee: Rs 5000 - Rs 6700
 logo: '/assets/tech/logos_it.svg'
 cover: '/images/courses/it-for-beginners-vidya.webp'
 priority: 2;
@@ -10,7 +12,23 @@ layout: '../../layouts/CourseLayout.astro'
 
 # IT for Beginners (Vidya)
 
-This is the first course
+## Course Introduction
+
+Knowledge of I.T. is essential in today's world. No matter which career you chose, you need a strong foundation in I.T. & computers. Explore this new and exciting world with Aptech!
+
+Take your first steps towards computer literacy and ensure that your fundamentals are strong. This will help you build a great career in any field of your choice.
+
+## Course Details
+
+This course gives you quick training in:
+
+- Computer fundamentals & internet basics
+- MS Office 2016 - Word, Excel, PowerPoint and Outlook
+
+## Course Duration
+
+I.T. for Beginners (Vidya) is a **2 month course**. Classes are typically held 2 hours a day - 3 days a week.
+
 
 ## Course Outline
 
@@ -18,10 +36,6 @@ This is the first course
 - Lorem ipsum dolor sit amet consectetur adipisicing elit.
 - Lorem ipsum dolor sit amet consectetur adipisicing elit.
 - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-
-## Introduction
-
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus deleniti debitis doloremque ipsa at magni et doloribus facere beatae eaque, assumenda maiores nihil minus quae ab veritatis earum laudantium accusantium porro molestias quas corporis nam. Similique atque accusantium vel ab dolorum perspiciatis, esse consequuntur at dolores! Assumenda hic commodi consequatur.
 
 ## Schedule
 
@@ -37,6 +51,13 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus deleniti debi
 - Week 6: _Chapter 5_
 - Week 7: _Chapter 5_
 - Week 8: _Chapter 6_
+
+## Eligibility
+
+- Undergraduates
+- Graduates
+- Working Professionals
+- Engineers
 
 ## Instructors
 

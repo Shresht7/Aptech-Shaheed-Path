@@ -9,7 +9,7 @@ import type { CourseDetails } from "../types";
 type Props = MarkdownLayoutProps<CourseDetails>;
 
 const {
-    frontmatter: { id, title, cover, description, logo, url },
+    frontmatter: { id, title, cover, description, logo, duration, fee },
 } = Astro.props;
 ---
 
@@ -27,9 +27,9 @@ const {
                 <h3>Course Details</h3>
                 <p>{description}</p>
                 <h3>Course Duration</h3>
-                <p>8 Weeks</p>
+                <p>{duration}</p>
                 <h3>Course Fee</h3>
-                <p>Rs. 3000 / Month</p>
+                <p>{fee}</p>
             </aside>
         </div>
     </Section>
@@ -64,5 +64,9 @@ const {
         border-radius: 10px;
         flex: 2;
         background-color: #e3e3e377;
+    }
+
+    p {
+        text-align: center;
     }
 </style>

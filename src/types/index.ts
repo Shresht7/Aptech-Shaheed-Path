@@ -3,6 +3,8 @@ export interface CourseDetails {
     cover: string;
     title: string;
     description: string;
+    duration: string;
+    fee: string;
     logo: string;
     priority: number
 }
