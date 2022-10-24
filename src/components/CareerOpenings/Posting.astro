@@ -16,7 +16,9 @@ const { title, description, details } = Astro.props;
         <p>{description}</p>
         <Button id="job-posting" variant="outline">Show More</Button>
     </div>
-    <p id="job-details">{details}</p>
+    <div id="job-details">
+        <p>{details}</p>
+    </div>
 </li>
 
 <script>
@@ -32,6 +34,7 @@ const { title, description, details } = Astro.props;
     li {
         width: 100%;
         list-style: none;
+        border-bottom: 2px solid #777;
     }
 
     div {
@@ -41,11 +44,12 @@ const { title, description, details } = Astro.props;
         align-items: center;
         gap: 3rem;
         padding: 1rem 1rem;
-        border-bottom: 2px solid #777;
     }
 
     #job-details {
         display: none;
+        width: 75%;
+        margin: 0 auto;
     }
 
     #job-details.visible {
