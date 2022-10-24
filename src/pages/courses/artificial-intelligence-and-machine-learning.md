@@ -6,6 +6,7 @@ logo: '/assets/tech/logos_ai.svg'
 cover: '/images/courses/ai.jpg'
 priority: 3
 layout: '../../layouts/CourseLayout.astro'
+draft: true
 ---
 
 # Artificial Intelligence and Machine Learning
