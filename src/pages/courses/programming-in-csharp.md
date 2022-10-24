@@ -1,26 +1,23 @@
 ---
-id: programming-in-c
-title: Programming in C
-description: Learn the fundamentals of C to build a successful career as a programming language expert
+id: programming-in-csharp
+title: Programming in C#
+description: Learn the fundamentals of C# to build a successful career as a programming language expert
 duration: 8 Weeks (2 Months)
-fee: Rs 3000 - Rs 4000
-logo: '/assets/tech/logos_c.svg'
-cover: '/images/courses/c.jpg'
+fee: Rs 7200 - Rs 9600
+logo: '/assets/tech/logos_csharp.svg'
+cover: '/images/courses/csharp.jpg'
+priority: 4
 layout: '../../layouts/CourseLayout.astro'
 ---
 
-# Programming in C
-
 ## Course Introduction
 
-Learn the fundamentals of C to build a successful career as a programming language expert.
+Learn the fundamentals of C# to build a successful career as a programming language expert.
 
 ## Course Outline
 
-- Understand the basics of computer programming
-- Write, compile & debug programs in C language
-- Use different data types in a computer program
-- Learn how to use functions, methods and routines
+- Introduction to object-oriented programming in C#
+- Basic and advanced object-oriented application using C#
 
 ## Course Duration
 

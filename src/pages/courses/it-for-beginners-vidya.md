@@ -18,9 +18,7 @@ Knowledge of I.T. is essential in today's world. No matter which career you chos
 
 Take your first steps towards computer literacy and ensure that your fundamentals are strong. This will help you build a great career in any field of your choice.
 
-## Course Details
-
-This course gives you quick training in:
+## Course Outline
 
 - Computer fundamentals & internet basics
 - MS Office 2016 - Word, Excel, PowerPoint and Outlook
@@ -28,14 +26,6 @@ This course gives you quick training in:
 ## Course Duration
 
 I.T. for Beginners (Vidya) is a **2 month course**. Classes are typically held 2 hours a day - 3 days a week.
-
-
-## Course Outline
-
-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
 ## Schedule
 
