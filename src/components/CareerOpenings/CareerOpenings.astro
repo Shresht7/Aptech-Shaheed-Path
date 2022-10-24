@@ -1,29 +1,15 @@
 ---
-import Button from "../../utility/components/Button.astro";
-import Section from "../../utility/components/Section.astro";
 import Posting from "./Posting.astro";
+import type { JobDetails } from "../../types";
 
-const postings = [
-    {
-        title: "Counsellor",
-        description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi praesentium cupiditate dicta porro nihil dolor.",
-        details:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi praesentium cupiditate dicta porro nihil dolor.",
-    },
-    {
-        title: "Instructor",
-        description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi praesentium cupiditate dicta porro nihil dolor.",
-        details:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi praesentium cupiditate dicta porro nihil dolor.",
-    },
-];
+const postings = await Astro.glob<JobDetails>("./*.md");
 ---
 
-<Section classNames="full-width">
-    {postings.map((posting) => <Posting {...posting} />)}
-</Section>
+<section class="full-width">
+    <ul>
+        {postings.map((posting) => <Posting posting={posting} />)}
+    </ul>
+</section>
 
 <style>
     section {

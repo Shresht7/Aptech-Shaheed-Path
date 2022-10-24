@@ -6,3 +6,8 @@ export interface CourseDetails {
     logo: string;
     priority: number
 }
+
+export interface JobDetails {
+    title: string;
+    description: string;
+}
