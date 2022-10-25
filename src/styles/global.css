@@ -19,6 +19,7 @@
     --color-text: var(--color-black);
     --color-bg: var(--color-white);
 
+    --animation-duration: 250ms;
     --transition-duration: 250ms;
 }
 
@@ -160,4 +161,52 @@ code {
 
 .markdown p {
     margin-block: 0.75rem;
+}
+
+/* ========== */
+/* ANIMATIONS */
+/* ========== */
+
+@keyframes fade {
+    from {
+        opacity: var(--fade-from, 0);
+    }
+
+    to {
+        opacity: var(--fade-to, 1);
+    }
+}
+
+.fade-in {
+    --fade-in-from: 0;
+    --fade-in-to: 1;
+    animation: fade var(--animation-easing, ease-in) var(--animation-duration, 250ms) var(--animation-direction, forwards);
+}
+
+.fade-out {
+    --fade-from: 1;
+    --fade-to: 0;
+    animation: fade var(--animation-easing, ease-out) var(--animation-duration, 250ms) var(--animation-direction, forwards);
+}
+
+@keyframes fly {
+    from {
+        translate: var(--fly-from, 0 20px);
+    }
+
+    to {
+        translate: var(--fly-to, 0 0px);
+    }
+}
+
+.fly-in {
+    --fly-from: 0 20px;
+    --fly-to: 0 0px;
+    animation: fly var(--animation-easing, ease-in) var(--animation-duration, 250ms) var(--animation-direction, forwards);
+}
+
+.fly-out {
+    --fly-from: 0 0;
+    --fly-to: 0 -20px;
+    animation: fly var(--animation-easing, ease-out) var(--animation-duration, 250ms) var(--animation-direction, forwards);
 }
