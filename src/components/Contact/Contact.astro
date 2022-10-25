@@ -8,7 +8,7 @@ import Map from "./Map.astro";
 <Section>
     <Title>Contact Us</Title>
     <div class="flex row">
-        <div class="flex">
+        <div class="flex left">
             <div>
                 <p class="gold">Email</p>
                 <p>aptechshaheedpath@gmail.com</p>
@@ -27,11 +27,22 @@ import Map from "./Map.astro";
                 </address>
             </div>
         </div>
-        <Map />
+        <div class="right">
+            <Map />
+        </div>
     </div>
 </Section>
 
 <style>
+    div {
+        width: 100%;
+    }
+
+    .left,
+    .right {
+        flex: 1;
+    }
+
     p {
         text-align: right;
     }
