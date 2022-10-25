@@ -2,38 +2,57 @@
 //  Components
 import Title from "../../utility/components/Title.astro";
 import Section from "../../utility/components/Section.astro";
+import Map from "./Map.astro";
 ---
 
-<Section margin="3rem 2rem">
+<Section>
     <Title>Contact Us</Title>
-    <div>
-        <Title level={3} className="gold">Email</Title>
-        <p>aptechshaheedpath@gmail.com</p>
-    </div>
-    <div>
-        <Title level={3} className="gold">Phone Number</Title>
-        <p>9369372934</p>
-    </div>
-    <div>
-        <Title level={3} className="gold">Address</Title>
-        <address>
-            <p>
-                309 - Shopping Square-I, Sector-D, Sushant Golf City,<br />
-                Shaheed Path, Lucknow - 226030
-            </p>
-        </address>
+    <div class="flex row">
+        <div class="flex">
+            <div>
+                <p class="gold">Email</p>
+                <p>aptechshaheedpath@gmail.com</p>
+            </div>
+            <div>
+                <p class="gold">Phone Number</p>
+                <p>9369372934</p>
+            </div>
+            <div>
+                <p class="gold">Address</p>
+                <address>
+                    <p>
+                        309 - Shopping Square-I, Sector-D,<br /> Sushant Golf City,
+                        Shaheed Path, <br /> Lucknow - 226030
+                    </p>
+                </address>
+            </div>
+        </div>
+        <Map />
     </div>
 </Section>
 
 <style>
     p {
-        font-size: 1.75rem;
-        text-align: center;
+        text-align: right;
+    }
+
+    p:not(.gold) {
+        font-size: 1.5rem;
+    }
+
+    .row {
+        flex-direction: row;
+        gap: 4rem;
     }
 
     @media (width < 768px) {
         p {
             font-size: 1.25rem;
+            text-align: center;
+        }
+
+        .row {
+            flex-direction: column;
         }
     }
 </style>

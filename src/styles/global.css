@@ -41,7 +41,8 @@ body {
 }
 
 img,
-picture {
+picture,
+iframe {
     max-width: 100%;
     display: block;
 }
@@ -112,8 +113,20 @@ code {
     }
 }
 
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
 .full-width {
     width: 100%;
+}
+
+.gold {
+    color: var(--color-aptech-gold);
 }
 
 .inverted {
@@ -121,17 +134,13 @@ code {
     --color-bg: var(--color-black);
 }
 
-.gold {
-    color: var(--color-aptech-gold);
-}
-
 .centered-content {
     display: grid;
     place-content: center;
 }
 
-.rounded {
-    border-radius: 50%;
+.text-align {
+    text-align: var(--text-align, center);
 }
 
 /* =============== */
