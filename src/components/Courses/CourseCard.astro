@@ -17,7 +17,7 @@ const { id, cover, title, description, logo } = Astro.props;
             <h3>{title}</h3>
             <p>{description}</p>
         </div>
-        <img src={logo} alt={title} />
+        <img class="logo" src={logo} alt={title} />
     </div>
 </a>
 
@@ -47,6 +47,10 @@ const { id, cover, title, description, logo } = Astro.props;
 
     img {
         border-radius: 1rem;
+    }
+
+    .logo {
+        height: 48px;
     }
 
     .card-details {
