@@ -10,7 +10,7 @@ priority: 4
 layout: '../../layouts/CourseLayout.astro'
 ---
 
-## Course Introduction
+## Programming in C#
 
 Learn the fundamentals of C# to build a successful career as a programming language expert.
 
@@ -19,14 +19,15 @@ Learn the fundamentals of C# to build a successful career as a programming langu
 - Introduction to object-oriented programming in C#
 - Basic and advanced object-oriented application using C#
 
-## Course Duration
+## Introduction
 
-**8 Weeks (2 Months)**
+
 
 ## Schedule
 
 **Course Duration: 8 Weeks**
 
+<!--
 <br />
 
 - Week 1: _Chapter 1_
@@ -37,6 +38,7 @@ Learn the fundamentals of C# to build a successful career as a programming langu
 - Week 6: _Chapter 5_
 - Week 7: _Chapter 5_
 - Week 8: _Chapter 6_
+-->
 
 ## Eligibility
 
@@ -45,6 +47,8 @@ Learn the fundamentals of C# to build a successful career as a programming langu
 - Working Professionals
 - Engineers
 
+<!--
 ## Instructors
 
 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus deleniti debitis doloremque ipsa at magni et doloribus facere beatae eaque, assumenda maiores nihil minus quae ab veritatis earum laudantium accusantium porro molestias quas corporis nam. Similique atque accusantium vel ab dolorum perspiciatis, esse consequuntur at dolores! Assumenda hic commodi consequatur.
+-->
