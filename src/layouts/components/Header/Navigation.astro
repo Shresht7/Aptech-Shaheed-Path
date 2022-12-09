@@ -66,12 +66,14 @@ const navRoutes = {
             background-color: var(--color-text);
             color: var(--color-bg);
 
+            display: none;
             opacity: 0;
             transition: opacity var(--transition-duration) ease-in;
             z-index: -10;
         }
 
         ul.visible {
+            display: flex;
             opacity: 1;
             z-index: 10;
         }
