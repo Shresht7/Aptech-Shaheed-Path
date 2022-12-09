@@ -21,7 +21,7 @@ Learn the fundamentals of C# to build a successful career as a programming langu
 
 ## Introduction
 
-
+This course will provide you with an overview of the fundamentals of programming in the C# language. You will learn the basics of C# syntax, data types, classes, methods, and more. We will also cover topics such as object-oriented programming, the .NET Framework, Windows Forms, and databases. After completing this course, you will be able to create fully-functional programs in C# and understand the fundamentals of programming in the C# language.
 
 ## Schedule
 

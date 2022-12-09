@@ -9,9 +9,7 @@ cover: '/images/courses/c.jpg'
 layout: '../../layouts/CourseLayout.astro'
 ---
 
-# Programming in C
-
-## Course Introduction
+## Programming in C
 
 Learn the fundamentals of C to build a successful career as a programming language expert.
 
@@ -22,6 +20,10 @@ Learn the fundamentals of C to build a successful career as a programming langua
 - Use different data types in a computer program
 - Learn how to use functions, methods and routines
 
+## Introduction
+
+This course aims to provide an introduction to the fundamentals of programming in the C language. In this course, you will learn the basic principles of programming and how to use the C language to write efficient and effective code. You will also gain a deeper understanding of the principles of structured programming, and how to apply them to solve real-world problems. By the end of this course, you will have a good understanding of the C language, and you will be able to confidently write and debug programs in C.
+
 ## Course Duration
 
 **8 Weeks (2 Months)**
@@ -30,6 +32,7 @@ Learn the fundamentals of C to build a successful career as a programming langua
 
 **Course Duration: 8 Weeks**
 
+<!--
 <br />
 
 - Week 1: _Chapter 1_
@@ -40,6 +43,7 @@ Learn the fundamentals of C to build a successful career as a programming langua
 - Week 6: _Chapter 5_
 - Week 7: _Chapter 5_
 - Week 8: _Chapter 6_
+-->
 
 ## Eligibility
 
@@ -48,6 +52,8 @@ Learn the fundamentals of C to build a successful career as a programming langua
 - Working Professionals
 - Engineers
 
+<!--
 ## Instructors
 
 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus deleniti debitis doloremque ipsa at magni et doloribus facere beatae eaque, assumenda maiores nihil minus quae ab veritatis earum laudantium accusantium porro molestias quas corporis nam. Similique atque accusantium vel ab dolorum perspiciatis, esse consequuntur at dolores! Assumenda hic commodi consequatur.
+-->

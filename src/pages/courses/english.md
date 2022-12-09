@@ -11,12 +11,14 @@ layout: '../../layouts/CourseLayout.astro'
 
 Learn English
 
+<!--
 ## Course Outline
 
 - Lorem ipsum dolor sit amet consectetur adipisicing elit.
 - Lorem ipsum dolor sit amet consectetur adipisicing elit.
 - Lorem ipsum dolor sit amet consectetur adipisicing elit.
 - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+-->
 
 ## Introduction
 
@@ -26,6 +28,7 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus deleniti debi
 
 **Course Duration: 8 Weeks**
 
+<!--
 <br />
 
 - Week 1: _Chapter 1_
@@ -36,7 +39,10 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus deleniti debi
 - Week 6: _Chapter 5_
 - Week 7: _Chapter 5_
 - Week 8: _Chapter 6_
+-->
 
+<!--
 ## Instructors
 
 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus deleniti debitis doloremque ipsa at magni et doloribus facere beatae eaque, assumenda maiores nihil minus quae ab veritatis earum laudantium accusantium porro molestias quas corporis nam. Similique atque accusantium vel ab dolorum perspiciatis, esse consequuntur at dolores! Assumenda hic commodi consequatur.
+-->
