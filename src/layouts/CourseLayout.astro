@@ -16,7 +16,7 @@ const {
 <BasePlate title={title || "Course " + id}>
     <Section padding="2rem">
         <a href="/courses"> &lt; Back to Courses</a>
-        <div>
+        <div class="article-aside">
             <article class="markdown">
                 <slot />
             </article>
@@ -48,6 +48,12 @@ const {
         justify-content: space-between;
         align-items: flex-start;
         gap: 3rem;
+    }
+
+    @media (width < 960px) {
+        .article-aside {
+            flex-direction: column-reverse;
+        }
     }
 
     article {
