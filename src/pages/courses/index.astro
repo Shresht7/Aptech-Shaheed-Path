@@ -1,8 +1,8 @@
 ---
 import BasePlate from "../../layouts/BasePlate.astro";
-import Title from "../../utility/components/Title.astro";
+import Title from "../../components/Title.astro";
 import Showcase from "../../components/Courses/Showcase.astro";
-import Section from "../../utility/components/Section.astro";
+import Section from "../../components/Section.astro";
 import type { CourseDetails } from "../../types";
 
 const courses = await Astro.glob<CourseDetails>("./*.md");

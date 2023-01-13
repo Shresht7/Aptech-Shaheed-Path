@@ -1,7 +1,7 @@
 ---
 import BasePlate from "../layouts/BasePlate.astro";
-import Section from "../utility/components/Section.astro";
-import Title from "../utility/components/Title.astro";
+import Section from "../components/Section.astro";
+import Title from "../components/Title.astro";
 import Input from "../components/Form/Input.astro";
 import CareerOpenings from "../components/CareerOpenings/CareerOpenings.astro";
 ---
@@ -17,8 +17,8 @@ import CareerOpenings from "../components/CareerOpenings/CareerOpenings.astro";
             </p>
             <CareerOpenings />
             <form>
-                <Input label="Name" />
-                <Input label="Email" />
+                <Input name="name" label="Name" />
+                <Input name="email" label="Email" />
             </form>
         </Section>
     </main>
