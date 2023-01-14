@@ -2,8 +2,10 @@
 id: programming-in-c
 title: Programming in C
 description: Learn the fundamentals of C to build a successful career as a programming language expert
-duration: 8 Weeks (2 Months)
-fee: Rs 3000 - Rs 4000
+
+duration: 8 Weeks (40 Hours)
+fee: Rs 4,200
+
 logo: '/assets/tech/logos_c.svg'
 cover: '/images/courses/c.jpg'
 layout: '../../layouts/CourseLayout.astro'
@@ -12,13 +14,6 @@ layout: '../../layouts/CourseLayout.astro'
 ## Programming in C
 
 Learn the fundamentals of C to build a successful career as a programming language expert.
-
-## Course Outline
-
-- Understand the basics of computer programming
-- Write, compile & debug programs in C language
-- Use different data types in a computer program
-- Learn how to use functions, methods and routines
 
 ## Introduction
 
@@ -30,20 +25,7 @@ This course aims to provide an introduction to the fundamentals of programming i
 
 ## Schedule
 
-**Course Duration: 8 Weeks**
-
-<!--
-<br />
-
-- Week 1: _Chapter 1_
-- Week 2: _Chapter 1_
-- Week 3: _Chapter 2_
-- Week 4: _Chapter 3_
-- Week 5: _Chapter 4_
-- Week 6: _Chapter 5_
-- Week 7: _Chapter 5_
-- Week 8: _Chapter 6_
--->
+**2 hours per session** - **3 sessions per week**
 
 ## Eligibility
 
@@ -52,8 +34,16 @@ This course aims to provide an introduction to the fundamentals of programming i
 - Working Professionals
 - Engineers
 
-<!--
-## Instructors
+## Course Outline
 
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus deleniti debitis doloremque ipsa at magni et doloribus facere beatae eaque, assumenda maiores nihil minus quae ab veritatis earum laudantium accusantium porro molestias quas corporis nam. Similique atque accusantium vel ab dolorum perspiciatis, esse consequuntur at dolores! Assumenda hic commodi consequatur.
--->
+- Understand the basics of computers
+- Understand the basics of computer programming
+- Introduction to C language
+- Flow of control
+- Looping constructs
+- Arrays and Structures
+- Pointers
+- File handling
+- Write, compile & debug programs in C language
+- Use different data types in a computer program
+- Learn how to use functions, methods and routines
