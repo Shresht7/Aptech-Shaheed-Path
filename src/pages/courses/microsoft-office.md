@@ -17,16 +17,6 @@ layout: '../../layouts/CourseLayout.astro'
 
 Learn Microsoft Office Tools like Word, PowerPoint, Excel and more!
 
-## Course Outline
-
-- Microsoft Word
-- Microsoft PowerPoint
-- Microsoft Excel
-- Microsoft Outlook
-- Microsoft Sway
-- Microsoft OneNote
-- Microsoft OneDrive
-
 ## Introduction
 
 This course will provide you with the essential skills and knowledge to master the **Microsoft Office** suite of programs. You will learn how to use the powerful features of **Microsoft Word**, **Excel**, **PowerPoint** and **Outlook** to create professional _documents_, _spreadsheets_, _presentations_, and _emails_. Our experienced instructors will guide you through each program step-by-step, helping you develop the confidence to use and apply these programs to any project or task. By the end of this course, you will be able to work with Microsoft Office quickly and efficiently.
@@ -39,13 +29,12 @@ The main goal of the course is to provide the students with the knowledge of **W
 
 **(2 hours per session)** - **(3 sessions per week)**
 
-## Objectives
+## Course Outline
 
-The objectives of the course are:
-- Understand the **Windows Operating System**
-- Create professional documents in **Microsoft Word**
-- Create worksheets with formulas, functions, and various styles in **Microsoft 
-Excel 2016**
-- Create powerful presentations in **Microsoft PowerPoint**
-- Manage mails and schedules using **Microsoft Outlook**
-- Understand the use of **Microsoft Sway**, **Microsoft OneNote**, and **Microsoft OneDrive**
+- Microsoft Word
+- Microsoft PowerPoint
+- Microsoft Excel
+- Microsoft Outlook
+- Microsoft Sway
+- Microsoft OneNote
+- Microsoft OneDrive
