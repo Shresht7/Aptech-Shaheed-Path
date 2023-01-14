@@ -1,4 +1,6 @@
 ---
+const title = "Aptech Learning - Shaheed Path";
+
 const author = "Aptech Learning - Shaheed Path";
 
 const description =
@@ -10,7 +12,7 @@ const favicon = "/favicon.ico";
 const image = "/images/aptech-logo.png";
 
 const og = {
-    title: document.head.title,
+    title,
     description,
     type: "website",
     url: window.location.href,
@@ -23,7 +25,7 @@ const og = {
 const twitter = {
     card: "summary",
     site: author,
-    title: document.head.title,
+    title,
     description,
     image,
     creator: author,
