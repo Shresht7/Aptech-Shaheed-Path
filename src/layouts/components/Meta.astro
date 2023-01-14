@@ -1,6 +1,56 @@
+---
+const author = "Aptech Learning - Shaheed Path";
+
+const description =
+    "Aptech Learning - Shaheed Path. Computer Education Institute";
+
+const keywords = ["aptech", "computer", "education", "shaheedpath", "learning"];
+
+const favicon = "/favicon.ico";
+const image = "/images/aptech-logo.png";
+
+const og = {
+    title: document.head.title,
+    description,
+    type: "website",
+    url: window.location.href,
+    site_name: author,
+    image,
+    image_alt: author,
+    locale: "en_US",
+};
+
+const twitter = {
+    card: "summary",
+    site: author,
+    title: document.head.title,
+    description,
+    image,
+    creator: author,
+};
+---
+
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width" />
 <link rel="icon" href="/favicon.ico" />
 <meta name="generator" content={Astro.generator} />
 
-<!-- TODO: #8 Populate Meta Tags -->
+<meta name="description" content={description} />
+<meta name="keywords" content={keywords.join(", ")} />
+<meta name="author" content={author} />
+
+<meta property="og:title" content={og.title} />
+<meta property="og:description" content={og.description} />
+<meta property="og:type" content={og.type} />
+<meta property="og:url" content={og.url} />
+<meta property="og:site_name" content={og.site_name} />
+<meta property="og:image" content={og.image} />
+<meta property="og:image:alt" content={og.image_alt} />
+<meta property="og:locale" content={og.locale} />
+
+<meta name="twitter:card" content={twitter.card} />
+<meta name="twitter:site" content={twitter.site} />
+<meta name="twitter:title" content={twitter.title} />
+<meta name="twitter:description" content={twitter.description} />
+<meta name="twitter:image" content={twitter.image} />
+<meta name="twitter:creator" content={twitter.creator} />
