@@ -2,7 +2,6 @@
 import BasePlate from "../layouts/BasePlate.astro";
 import Section from "../components/Section.astro";
 import Title from "../components/Title.astro";
-import Input from "../components/Form/Input.astro";
 import CareerOpenings from "../components/CareerOpenings/CareerOpenings.astro";
 ---
 
@@ -11,11 +10,16 @@ import CareerOpenings from "../components/CareerOpenings/CareerOpenings.astro";
         <Section>
             <Title>Careers</Title>
             <p>
-                We're hiring! If you're interested in working with us, fill the
-                following form; or email your C.V. to
-                aptechshaheedpath@gmail.com
+                We're hiring! If you're interested in working with us, email
+                your C.V. to <b>aptechshaheedpath@gmail.com</b>
             </p>
             <CareerOpenings />
         </Section>
     </main>
 </BasePlate>
+
+<style>
+    main {
+        min-height: 100vh;
+    }
+</style>
