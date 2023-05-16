@@ -1,4 +1,7 @@
 ---
+// Components
+import { Image } from "@astrojs/image/components";
+
 // Utilities
 import {
     getRandomDuration,
@@ -57,7 +60,13 @@ const logos = [
                 class="floating-logo"
                 style={`--x: ${logo.x}; --y: ${logo.y}; --animation-duration: ${logo.duration}; --animation-delay: ${logo.delay}; --travel: ${logo.travel}`}
             >
-                <img src={logo.src} alt={logo.name} />
+                <Image
+                    src={logo.src}
+                    alt={logo.name}
+                    width={64}
+                    height={64}
+                    format="svg"
+                />
             </div>
         ))
     }

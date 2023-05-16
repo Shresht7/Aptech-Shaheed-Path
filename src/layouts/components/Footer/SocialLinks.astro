@@ -1,29 +1,42 @@
 ---
+// Components
+import { Image } from "@astrojs/image/components";
+
+// Types
+import type { OutputFormat } from "@astrojs/image/dist/loaders";
+
+const ICON_SIZE = 40;
+
 const icons = [
     {
         name: "linkedin",
         src: "linkedin.svg",
         href: "https://in.linkedin.com/in/aptechshaheedpath",
+        format: "svg",
     },
     {
         name: "facebook",
         src: "facebook.svg",
         href: "https://www.facebook.com/profile.php?id=100079766190197",
+        format: "svg",
     },
     {
         name: "twitter",
         src: "twitter.svg",
         href: "https://twitter.com/aptech_sp",
+        format: "svg",
     },
     {
         name: "instagram",
         src: "instagram.png",
         href: "https://www.instagram.com/aptech.shaheedpath/",
+        format: "png",
     },
     {
         name: "gmail",
         src: "gmail.svg",
         href: "/contact",
+        format: "svg",
     },
 ];
 ---
@@ -35,9 +48,12 @@ const icons = [
             icons.map((icon) => (
                 <a href={icon.href}>
                     <div class="icon">
-                        <img
+                        <Image
                             src={`/assets/social/${icon.src}`}
                             alt={icon.name}
+                            width={ICON_SIZE}
+                            height={ICON_SIZE}
+                            format={icon.format as OutputFormat}
                         />
                     </div>
                 </a>
