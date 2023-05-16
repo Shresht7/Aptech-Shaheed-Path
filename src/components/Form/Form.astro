@@ -41,6 +41,7 @@ import Section from "../../components/Section.astro";
         gap: 2rem;
         position: relative;
         z-index: 1;
+        transition: scale 1000ms ease-out;
     }
 
     form::before {
@@ -48,12 +49,25 @@ import Section from "../../components/Section.astro";
         position: absolute;
         width: 100%;
         height: 100%;
-        scale: 9 3;
+        scale: 6 2;
         rotate: -60deg;
         z-index: -1;
         background-color: var(--color-bg);
         outline: 4px solid var(--color-aptech-gold);
         outline-offset: -8px;
+        transition: all 1000ms ease-out;
+        box-shadow: inset 0px 0px 20px 10px #feb10e66;
+    }
+
+    form:hover,
+    form:focus {
+        scale: 1.05;
+    }
+
+    form:hover::before,
+    form:focus {
+        scale: 9 3;
+        rotate: -70deg;
     }
 </style>
 
