@@ -1,6 +1,20 @@
+---
+// Components
+import { Image } from "@astrojs/image/components";
+
+const WIDTH = 200;
+const ASPECT_RATIO = 2.42;
+---
+
 <a href="/">
     <div>
-        <img src="/images/logo.png" alt="Aptech Logo" />
+        <Image
+            src="/images/logo.png"
+            alt="Aptech Logo"
+            format="webp"
+            width={200}
+            height={WIDTH / ASPECT_RATIO}
+        />
         <span id="branch-name">SHAHEED PATH</span>
     </div>
 </a>

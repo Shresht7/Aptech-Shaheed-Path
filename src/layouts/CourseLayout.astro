@@ -1,7 +1,9 @@
 ---
+// Components
 import Section from "../components/Section.astro";
 import Title from "../components/Title.astro";
 import BasePlate from "../layouts/BasePlate.astro";
+import { Image } from "@astrojs/image/components";
 
 import type { MarkdownLayoutProps } from "astro";
 import type { CourseDetails } from "../types";
@@ -21,9 +23,21 @@ const {
                 <slot />
             </article>
             <aside>
-                <img src={logo} alt={title} width="100px" />
+                <Image
+                    src={logo}
+                    alt={title}
+                    width={64}
+                    height={64}
+                    format="svg"
+                />
                 <Title>{title || "Course " + id}</Title>
-                <img src={cover} alt="" width={400} height={300} />
+                <Image
+                    src={cover}
+                    alt=""
+                    width={400}
+                    height={225}
+                    format="webp"
+                />
                 <h3>Course Details</h3>
                 <p>{description}</p>
                 <h3>Course Duration</h3>

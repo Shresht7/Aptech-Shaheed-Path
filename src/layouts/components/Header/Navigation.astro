@@ -1,4 +1,7 @@
 ---
+// Components
+import { Image } from "@astrojs/image/components";
+
 const navRoutes = {
     Home: "/",
     Courses: "/courses",
@@ -9,7 +12,13 @@ const navRoutes = {
 
 <nav>
     <div id="hamburger">
-        <img src="/assets/hamburger.svg" alt="hamburger-menu" />
+        <Image
+            src="/assets/hamburger.svg"
+            alt="hamburger-menu"
+            format="svg"
+            width={28}
+            height={28}
+        />
     </div>
     <ul>
         {

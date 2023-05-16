@@ -1,5 +1,10 @@
+---
+// Components
+import { Image } from "@astrojs/image/components";
+---
+
 <li>
-    <img src="/assets/star.svg" height="24px" width="24px" alt="" />
+    <Image src="/assets/star.svg" height={24} width={24} alt="" format="svg" />
     <slot />
 </li>
 
