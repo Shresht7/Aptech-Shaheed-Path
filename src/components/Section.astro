@@ -4,12 +4,13 @@ export interface Props {
     margin?: string;
     padding?: string;
     classNames?: string;
+    id?: string;
 }
 
-const { classNames = "", gap, margin, padding } = Astro.props;
+const { classNames = "", gap, margin, padding, id } = Astro.props;
 ---
 
-<section class={classNames}>
+<section id={id} class={classNames}>
     <div class="container">
         <slot />
     </div>
