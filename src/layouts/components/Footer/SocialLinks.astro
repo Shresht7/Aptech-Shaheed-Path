@@ -2,43 +2,13 @@
 // Components
 import { Image } from "@astrojs/image/components";
 
+// Data
+import icons from "../../../data/social-icons.json";
+
 // Types
 import type { OutputFormat } from "@astrojs/image/dist/loaders";
 
 const ICON_SIZE = 40;
-
-const icons = [
-    {
-        name: "linkedin",
-        src: "linkedin.svg",
-        href: "https://in.linkedin.com/in/aptechshaheedpath",
-        format: "svg",
-    },
-    {
-        name: "facebook",
-        src: "facebook.svg",
-        href: "https://www.facebook.com/profile.php?id=100079766190197",
-        format: "svg",
-    },
-    {
-        name: "twitter",
-        src: "twitter.svg",
-        href: "https://twitter.com/aptech_sp",
-        format: "svg",
-    },
-    {
-        name: "instagram",
-        src: "instagram.png",
-        href: "https://www.instagram.com/aptech.shaheedpath/",
-        format: "png",
-    },
-    {
-        name: "gmail",
-        src: "gmail.svg",
-        href: "/contact",
-        format: "svg",
-    },
-];
 ---
 
 <div>
