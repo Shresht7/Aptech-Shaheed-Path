@@ -7,7 +7,7 @@ import Map from "./Map.astro";
 
 <Section>
     <Title>Contact Us</Title>
-    <div class="flex row">
+    <div id="contact-row">
         <div class="flex left">
             <div>
                 <p class="gold">Email</p>
@@ -51,8 +51,11 @@ import Map from "./Map.astro";
         font-size: 1.5rem;
     }
 
-    .row {
+    #contact-row {
+        display: flex;
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
         gap: 4rem;
     }
 
@@ -62,7 +65,7 @@ import Map from "./Map.astro";
             text-align: center;
         }
 
-        .row {
+        #contact-row {
             flex-direction: column;
         }
     }
