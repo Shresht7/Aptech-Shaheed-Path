@@ -1,7 +1,7 @@
-**Aptech Learning** is a _world-class institute_ known for its **pioneering educational courses** for more than **three decades**. It has trained **millions of students** _across 40 countries_ and continues to help them _acquire necessary skills_ to land their **dream jobs**!
+**Aptech Learning** is a _global leader_ in providing **innovative educational courses** for over **30 years**. It has empowered **millions of students** in _40 countries_ to _develop essential skills_ for their **career success**!
 
-With _advanced training and methods_, **Aptech Learning** has built a strong _presence_ and _credibility_ across the globe. **Aptech Learning** enables students to flourish into **job-ready professionals**.
+With _cutting-edge training and methods_, **Aptech Learning** has established a strong _reputation_ and _trust_ worldwide. **Aptech Learning** helps students transform into **industry-ready professionals**.
 
-**Aptech Learning** offers programs enabling students to develop a complete understanding of the _latest technologies_ (like `Java`, `.NET`, `Artificial Intelligence`, `Machine Learning`, `Web Development`, `E-Commerce`) in the **I.T. industry**. The programs are designed to train students in _industry-relevant knowledge_ and in-depth _professional skills_.
+**Aptech Learning** offers programs that equip students with a comprehensive understanding of the _latest technologies_ (such as `Java`, `.NET`, `Artificial Intelligence`, `Machine Learning`, `Web Development`, `E-Commerce`) in the **I.T. sector**. The programs are tailored to impart students with _relevant knowledge_ and _deep skills_ that are in demand in the industry.
 
-**Aptech Learning** enhances the learning of its students with _modern training methods_ which are both _Educative_ and _Interactive_. Adequate emphasis is laid on both, _theory_ as well as _practical-based learning_, in order to give the student _complete training_, right from **Fundamentals** to **Advanced level**. 
+**Aptech Learning** enhances the learning experience of its students with _modern training methods_ that are both _Informative_ and _Engaging_. A balanced focus is given to both, _theory_ and _practice-based learning_, to ensure that the student receives _holistic training_, from **Basics** to **Advanced level**.
