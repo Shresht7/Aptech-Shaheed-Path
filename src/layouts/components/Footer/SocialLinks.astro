@@ -1,12 +1,9 @@
 ---
 // Components
-import { Image } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 
 // Data
 import icons from "../../../data/social-icons.json";
-
-// Types
-import type { OutputFormat } from "@astrojs/image/dist/loaders";
 
 const ICON_SIZE = 40;
 ---
@@ -23,7 +20,7 @@ const ICON_SIZE = 40;
                             alt={icon.name}
                             width={ICON_SIZE}
                             height={ICON_SIZE}
-                            format={icon.format as OutputFormat}
+                            format={icon.format}
                         />
                     </div>
                 </a>
