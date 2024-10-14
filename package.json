@@ -12,6 +12,6 @@
   },
   "dependencies": {
     "@netlify/functions": "^2.8.1",
-    "astro": "^4.15.5"
+    "astro": "^4.16.1"
   }
 }
